@@ -1,0 +1,29 @@
+.trip-advice{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trip-advice img{
+  width: 70%;
+  //right: 40px;
+}
+
+.text-advice {
+  position: absolute;
+  background-color: white;
+  padding: 47px;
+  top: 100px;
+  left: 20px;
+  width: 45%;
+}
+
+.text-advice h3{
+  font-weight: lighter;
+  color: $picton-blue;
+}
+
+.text-advice p{
+  font-size: 15px;
+}

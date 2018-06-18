@@ -1,0 +1,57 @@
+.navbar-inverse{
+  //background-color: transparent;
+  //border-color: gray;
+  //background-color: white;
+}
+
+.navbar-nav li a{
+  color: $gray;
+  font-size: 14px;
+  //font-weight: bold;
+}
+
+.navbar-brand{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar-inverse .navbar-brand{
+  color: white;
+  font-weight: lighter;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 140px;
+  border: 0px solid;
+  margin-bottom: 0;
+}
+
+.navbar-brand img{
+  width: 117px;
+}
+
+
+.navbar-default{
+  min-height: 60px;
+}
+
+.navbar-default .navbar-brand{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar-nav > li.dropdown:hover > a,
+.navbar-nav > li.dropdown:hover > a:hover,
+.navbar-nav > li.dropdown:hover > a:focus {
+    background-color: rgb(231, 231, 231);
+    color: rgb(85, 85, 85);
+}
+
+li.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+

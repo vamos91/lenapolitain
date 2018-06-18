@@ -1,0 +1,48 @@
+.padded {
+    padding-top: 2em;
+    padding-bottom: 3em;
+  }
+
+.btn-primary{
+  background-color: $rich-electric-blue;
+  border-color: $rich-electric-blue;
+}
+
+.thumbnail{
+  padding: 0px;
+  background-color: white;
+  border: 0px;
+}
+
+.thumbnail img{
+  height: 250px;
+}
+
+
+.thumbnail h3{
+  font-weight: lighter;
+  font-size: 22px;
+}
+
+.thumbnail .text{
+  font-size: 15px;
+}
+
+.thumbnail .duree{
+  font-size: 17px;
+  color: $picton-blue;
+}
+
+.thumbnail-xl img{
+  height: 350px;
+  width: 100%;
+}
+
+hr {
+    border-top: 1px solid $picton-blue;
+}
+
+
+.gouvernail img{
+  width: 100px;
+}

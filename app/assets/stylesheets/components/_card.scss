@@ -1,0 +1,34 @@
+.card{
+  height: 300px;
+  position: relative;
+  //width: 100%;
+  background-position: center;
+  background-size: cover !important;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ // vertical-align: center
+}
+
+.card img{
+  width: 100%;
+}
+
+.test{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.card p{
+  position:absolute;
+  //top: 0;
+  color: white;
+  font-weight: lighter;
+  font-size: 32px;
+}
+
+.row-destination{
+  margin-left: 0px;
+  margin-right: 0px;
+}

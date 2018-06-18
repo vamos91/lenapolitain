@@ -1,0 +1,84 @@
+<nav class="navbar hidden-xs" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+       <%= link_to "/", class: "navbar-brand" do %>
+        <%= image_tag 'final_logo.png'%>
+       <% end %>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar-collapsable">
+      <ul class="nav navbar-nav foo navbar-right" id="menu">
+        <li>
+           <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Croisières à thèmes <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><strong>Martinique</strong></a></li>
+            <li><a href="#">Croisière île aux fleurs</a></li>
+            <li><a href="#">Croisière des trois Pitons</a></li>
+            <li><a href="#">Croisière Pirates des Grenadines</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><strong>Guadeloupe</strong></a></li>
+            <li><a href="#">Croisière Gwada: Découvrez la Guadeloupe et ses îles</a></li>
+            <li><a href="#">Croisière îles sauvages, « Into the wild »</a></li>
+            <li><a href="#">Mini croisières Gwada</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><strong>Saint Martin</strong></a></li>
+            <li><a href="#">Croisière St Barth et Iles du Nord</a></li>
+            <li><a href="#">Croisière Iles du Nord et Iles Vierges</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><strong>Les baléares</strong></a></li>
+            <li><a href="#">Croisière Ibiza-Formentera</a></li>
+            <li><a href="#">Croisière Ibiza-Formentera-Majorque</a></li>
+            <li><a href="#">Mini croisière Baléares</a></li>
+            <li class="divider"></li>
+            <li><a href="#"><strong>Croisière Kite</strong></a></li>
+            <li class="divider"></li>
+            <li><a href="#"><strong>Croisière à la carte</strong></a></li>
+            <li class="divider"></li>
+            <li><a href="#"><strong>La transatlantique</strong></a></li>
+          </ul>
+        </li>
+        </li>
+        <!-- <li>
+          <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Destinations<b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Les baléares</a></li>
+            <li><a href="#">Martinique</a></li>
+            <li><a href="#">Guadeloupe</a></li>
+            <li><a href="#">Saint Martin</a></li>
+          </ul>
+        </li>
+        </li> -->
+        <li>
+          <%= link_to "Croisière Kite" %>
+        </li>
+        <li>
+          <%= link_to "Qui sommes nous" %>
+        </li>
+        <li>
+          <%= link_to "Le bateau", "/bateau" %>
+        </li>
+         <li>
+          <%= link_to "Informations et sécurité" %>
+        </li>
+        <li>
+          <%= link_to "Réserver", nil ,{:style => 'color: #30BCED; font-size: 16px; border: 1px solid #30BCED;'}%>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="navbar navbar-mobile hidden-md hidden-lg">
+    <div class="dropdown">
+     <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <ul class="dropdown-menu dropdown-menu-right dropdown-menu-center">
+        <li><%= link_to "A propos de l'artiste"%></li>
+        <li><%= link_to "Gallerie"%></li>
+        <li><%= link_to "Blog"%></li>
+        <li><%= link_to "Contact" %></li>
+      </ul>
+    </div>
+  </div>

@@ -1,0 +1,232 @@
+<div class="banner bateau">
+      <div class="banner-content" style="width: 100%">
+     <div class="banner-home">
+           <h1 class="nom text-center">Le Napolitain</h1>
+          <h3 class="text-center">Bienvenue à bord du Feeling 446</h3>
+          <p class="nom2" style="font-weight: bold;"></p>
+     </div>
+<div class="container feature-container">
+    <div class="row text-center" style="padding-top: 13px;">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+           <i class="fas fa-users icone"></i>
+           <p>Capacité : 8 passagers</p>
+        </div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+          <i class="fas fa-arrows-alt-h icone"></i>
+          <p>Longueur : 14m</p>
+        </div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+           <i class="fas fa-arrows-alt-v icone"></i>
+           <p>Largeur : 4,46m</p>
+        </div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+           <i class="fas fa-bed icone"></i>
+           <p>8 couchages</p>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+</div>
+<div class="container">
+  <p class="padded text-center" style="margin-top: 40px; color: gray; font-size: 22px;">"Le Napolitain" est un feeling 446, un croiseur de haute mer, bateau de voyage par excellence, il sera le partenaire idéal de vos croisières aux Antilles.</p>
+</div>
+
+<div class="gouvernail text-center">
+  <p><%= image_tag 'gouvernail.png' %></p>
+</div>
+
+
+<!-- <div class="wrapper padded">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+           <%= image_tag 'passager.png' %>
+           <p>Capacité à bord Conseillée : 8 passagers</p>
+        </div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+          <%= image_tag 'longueur.png' %>
+          <p>Longueur : 14m</p>
+        </div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+           <%= image_tag 'largeur.png' %>
+           <p>Largeur : 4,46m</p>
+        </div>
+      </div>
+       <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="features">
+           <%= image_tag 'lit.png' %>
+           <p>8 couchages</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+
+<div class="wrapper padded">
+  <div class="container">
+    <h3 style="color: gray;"> - Voici votre bateau - </h3>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 bateau-feature">
+        <%= image_tag 'final_logo.png'%>
+        <p>Le Feeling 446, ici en version "GTE" (Grand tirant d'eau), est un <strong>voilier monocoque hauturier</strong> de 13.80m dessiné par Philippe Harlé et Alain Mortain. Il a été construit en monolithique fibres de verre / polyester, par Kirié (France).</p>
+        <p>C'est le savoir faire du chantier Kirié, dont la réputation n'est plus à faire, qui s'exprime dans toute sa splendeur.Le Feeling 446, un croiseur de haute mer élégant et confortable.
+Un grand carré convivial</p>
+      </div>
+       <div class="col-xs-12 col-sm-6 bateau-feature-img">
+        <%= image_tag 'bateau3.jpg'%>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="wrapper padded">
+
+  <div class="container">
+    <h3 class="" style="color: gray;"> - Visite guidée... - </h3>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-8 col-md-8">
+        <div class="product-slider">
+  <div id="carousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="item active"> <%= image_tag "slide2.jpg"%> </div>
+      <div class="item"> <%= image_tag "slide3.jpg"%> </div>
+      <div class="item"> <%= image_tag "slide4.jpg"%> </div>
+      <div class="item"> <%= image_tag "slide5.jpg"%> </div>
+      <div class="item"> <%= image_tag "slide6.jpg"%> </div>
+      <!-- <div class="item"> <%= image_tag "slide7.jpg"%> </div> -->
+    </div>
+  </div>
+  <div class="clearfix">
+    <div id="thumbcarousel" class="carousel slide" data-interval="false">
+      <div class="carousel-inner">
+        <div class="item active">
+          <div data-target="#carousel" data-slide-to="0" class="thumb"><%= image_tag "slide2.jpg"%></div>
+          <div data-target="#carousel" data-slide-to="1" class="thumb"><%= image_tag "slide3.jpg"%> </div>
+          <div data-target="#carousel" data-slide-to="2" class="thumb"><%= image_tag "slide4.jpg"%></div>
+          <div data-target="#carousel" data-slide-to="3" class="thumb"><%= image_tag "slide5.jpg"%></div>
+        </div>
+        <div class="item">
+          <div data-target="#carousel" data-slide-to="5" class="thumb"><%= image_tag "slide6.jpg"%></div>
+          <!-- <div data-target="#carousel" data-slide-to="6" class="thumb"><%= image_tag "slide7.jpg"%></div> -->
+        </div>
+      </div>
+      <!-- /carousel-inner -->
+      <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a> <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i> </a> </div>
+    <!-- /thumbcarousel -->
+
+  </div>
+</div>
+      </div>
+      <div class="col-xs-12 col-sm-4 col-md-4">
+      <div class="image-slider">
+        <%= image_tag "nap.jpg" %>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class="container padded">
+<h3 class="" style="color: gray;"> - Les équipements du bateau - </h3>
+<hr>
+<div class="padded">
+   <i class="fab fa-usb"></i> Prise USB
+   <i class="fas fa-bolt" style="margin-left: 10px;"></i> Prise 220V
+</div>
+  <div class="row" style="line-height: 1.8;">
+
+          <div class="col-md-3">
+            <div>
+            <p><i class="fas fa-utensils"></i> <strong> Equipements cuisine</strong></p>
+            </div>
+            <ul class="list-unstyled">
+              <li>Couverts</li>
+              <li>Four/cuisinière 2 feux</li>
+              <li>Réfrigérateur</li>
+              <li>Congélateur</li>
+              <li>Évier double</li>
+              <li>Fait tout</li>
+              <li>Cocote minute</li>
+
+            </ul>
+          </div>
+          <div class="col-md-3" style="border-left: 1px solid #30BCED;">
+            <ul class="list-unstyled">
+             <li>Table à manger</li>
+             <li>Barbecue</li>
+             <li>Cafetière italienne</li>
+             <li>Casseroles</li>
+             <li>Four à gaz</li>
+            </ul>
+          </div>
+        <div>
+
+          <div class="col-md-3">
+            <p><i class="fas fa-ship"></i> <strong> Equipements du voilier</strong></p>
+            <ul class="list-unstyled">
+              <li>Bimini</li>
+              <li>Échelle de bain</li>
+              <li>Table à manger</li>
+              <li>Bain de soleil avant</li>
+              <li>Douche de pont</li>
+            </ul>
+
+          </div>
+          <div class="col-md-3" style="border-left: 1px solid #30BCED;">
+            <ul class="list-unstyled">
+             <li>Annexe</li>
+             <li>Moteur d'annexe</li>
+             <li>Guindeau électrique</li>
+             <li>GPS traceur</li>
+             <li>Radar</li>
+             <li>Sondeur</li>
+             <li>VHF/AIS</li>
+             <li>Pilote automatique</li>
+             <li>Téléphone iridium</li>
+            </ul>
+          </div>
+          </div>
+
+          <!-- <div class="col-md-6">
+            <%= image_tag 'bateau3.jpg'%>
+          </div> -->
+        </div>
+</div>
+
+
+
