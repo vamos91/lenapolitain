@@ -68,9 +68,6 @@ padding: 200px;
   background-position:center;
   background-image: image-url('bateau4.jpg');
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   padding: 100px;
   background-attachment: fixed;
 }
@@ -79,7 +76,7 @@ padding: 200px;
   padding: 70px;
   color: white;
   font-size: 22px;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0,78,100,0.4);
 
 }
 
@@ -89,3 +86,4 @@ padding: 200px;
     margin-right: 50px;
     font-weight: bold;
 }
+
