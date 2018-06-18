@@ -1086,3 +1086,419 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 57ms (Views: 55.5ms | ActiveRecord: 0.0ms)
 
 
+  [1m[35m (6.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+Migrating to CreateBlogs (20180618203344)
+  [1m[35m (8.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (46.8ms)[0m  [1m[35mCREATE TABLE "blogs" ("id" bigserial primary key, "titre" character varying, "description" text, "image" character varying, "video" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180618203344_create_blogs.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (1.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180618203344"]]
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (1.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+Migrating to RenameBlogToBlogs (20180618204959)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (7.6ms)[0m  [1m[35mALTER TABLE "blog" RENAME TO "blogs"[0m
+  ↳ db/migrate/20180618204959_rename_blog_to_blogs.rb:3
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (5.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(7866046274905152600)[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/gems/ruby-2.5.0/bin/rake:23
+Started GET "/" for 127.0.0.1 at 2018-06-18 22:58:57 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/rubies/ruby-2.5.0/lib/ruby/gems/2.5.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1310.9ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 1357ms (Views: 1355.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-18 22:59:30 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (22.1ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-18 23:00:10 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (19.8ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 59ms (Views: 57.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:00:12 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:01:38 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:01:41 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:02:23 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 406 Not Acceptable in 95ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (StaticController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.0) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.0) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.0) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.0) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.0) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.0) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.0) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.0) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.0) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.0) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.0) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.0) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.0) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.0) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.0) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.5) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.5) lib/rack/etag.rb:25:in `call'
+rack (2.0.5) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.5) lib/rack/head.rb:12:in `call'
+actionpack (5.2.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.5) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.5) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.0) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:02:56 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:03:15 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (5.8ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.2ms)
+  Rendered shared/_navbar.html.erb (2.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 48ms (Views: 34.2ms | ActiveRecord: 8.5ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:03:19 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.2ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bateau" for 127.0.0.1 at 2018-06-18 23:03:21 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/bateau"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:07:01 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.2ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:07:06 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (98.9ms)
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 2.2ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_cache' for #<Blog:0x00007facf334dff8>
+Did you mean?  image_change):
+    12:   </div>
+    13:   <div class="form-group">
+    14:      <%= f.input :image, label: :PHOTO %>
+    15:   <%= f.input :image_cache, as: :hidden %>
+    16:   </div>
+    17:   <%= f.submit "ENVOYER" %>
+    18: <% end %>
+  
+app/views/blogs/new.html.erb:15:in `block in _app_views_blogs_new_html_erb__4451480062989836417_70190429181540'
+app/views/blogs/new.html.erb:6:in `_app_views_blogs_new_html_erb__4451480062989836417_70190429181540'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:07:21 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_cache' for #<Blog:0x00007facf838c640>
+Did you mean?  image_change):
+    12:   </div>
+    13:   <div class="form-group">
+    14:      <%= f.input :image, label: :image %>
+    15:   <%= f.input :image_cache, as: :hidden %>
+    16:   </div>
+    17:   <%= f.submit "ENVOYER" %>
+    18: <% end %>
+  
+app/views/blogs/new.html.erb:15:in `block in _app_views_blogs_new_html_erb__4451480062989836417_70190437775120'
+app/views/blogs/new.html.erb:6:in `_app_views_blogs_new_html_erb__4451480062989836417_70190437775120'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:07:38 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (12.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `image_cache' for #<Blog:0x00007facf7559a28>
+Did you mean?  image_change):
+    12:   </div>
+    13:   <div class="form-group">
+    14:    <!--   <%= f.input :image, label: :image %>
+    15:   <%= f.input :image_cache, as: :hidden %> -->
+    16:   </div>
+    17:   <%= f.submit "ENVOYER" %>
+    18: <% end %>
+  
+app/views/blogs/new.html.erb:15:in `block in _app_views_blogs_new_html_erb__4451480062989836417_70190430339740'
+app/views/blogs/new.html.erb:6:in `_app_views_blogs_new_html_erb__4451480062989836417_70190430339740'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:07:46 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:20
+  Rendered blogs/new.html.erb within layouts/application (5.4ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 42ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-06-18 23:08:11 +0200
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"CpVtgeRoSJHWZUkRtiDTKizv2OPGSzA6Qp5YHxPjBar4xscDGpwXCjWCbLSFactsdigeOEya9oh1ZW9I1UXJKQ==", "blog"=>{"titre"=>"test article", "description"=>"fbegnnrgnnqdnqdnqtdnqenqetnqetnqnqnyqenqen\r\ngnen\r\nqetnqetnqet\r\nnetnetn\r\netn\r\ne"}, "commit"=>"ENVOYER"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:18
+  [1m[36mBlog Create (4.2ms)[0m  [1m[32mINSERT INTO "blogs" ("titre", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["titre", "test article"], ["description", "fbegnnrgnnqdnqdnqtdnqenqetnqetnqnqnyqenqen\r\ngnen\r\nqetnqetnqet\r\nnetnetn\r\netn\r\ne"], ["created_at", "2018-06-18 21:08:11.038135"], ["updated_at", "2018-06-18 21:08:11.038135"]]
+  ↳ app/controllers/blogs_controller.rb:18
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:18
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 10ms (ActiveRecord: 5.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:08:11 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 31.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:09:25 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (217.8ms)
+Completed 500 Internal Server Error in 225ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `articles' for #<#<Class:0x00007facf3555558>:0x00007facf2c56678>
+Did you mean?  @articles):
+    1: <h1>BLOG</h1>
+    2: 
+    3: <%= articles.each do |article| %>
+    4: <%= article.titre%>
+    5: <%= article.description%>
+    6: <% end %>
+  
+app/views/blogs/index.html.erb:3:in `_app_views_blogs_index_html_erb__335883557408415241_70190392067280'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:09:37 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
