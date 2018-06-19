@@ -96,3 +96,16 @@ padding: 200px;
   background-image: image-url('ile-au-fleur.jpg');
   color:white;
 }
+
+.banner-show img{
+  color: white;
+  text-align: center;
+  height: calc(100vh - 140px);
+  background-size: cover !important;
+  background-position: center;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+}

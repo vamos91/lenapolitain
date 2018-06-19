@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   get '/bateau' => 'static#bateau'
   get '/ile_aux_fleurs' => 'static#ile_aux_fleurs'
   resources :blogs
+  resources :croisieres
 end
