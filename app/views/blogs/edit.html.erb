@@ -1,0 +1,20 @@
+<div class="wrapper"style="margin-top: 100px;">
+  <div class="container">
+     <div class="well">
+         <p class="text-center">MODIFIER UN ARTICLE</p>
+<%= simple_form_for(@article) do |f| %>
+<div class="form-group">
+  <%= f.input :titre, label: false, placeholder: 'Whouaa ! trop belle ta peinture. Donne lui un nom.' %>
+</div>
+  <div class="form-group">
+      <%= f.text_area :description, label: :DESCRIPTION,rows: 10, placeholder: "Qu'est ce que c'est que cette peinture cette fois ci ! Allez raconte moi son histoire, on veut tout savoir... :)", class: 'form-control'%>
+  </div>
+  <div class="form-group">
+     <%= f.input :image, label: :PHOTO %>
+    <%= f.input :image_cache, as: :hidden %>
+  </div>
+  <%= f.submit "ENVOYER" %>
+  <%end%>
+</div>
+  </div>
+</div>

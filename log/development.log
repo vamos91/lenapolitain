@@ -1502,3 +1502,1443 @@ Processing by BlogsController#index as HTML
 Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:13:57 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 3311ms (Views: 3308.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:14:18 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:14:47 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 2429ms (Views: 2426.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-18 23:15:53 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (20.4ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 50ms (Views: 48.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:15:57 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:16:20 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:16:36 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 32ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:17:35 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:17:57 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:18:04 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:18:27 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:22:05 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:22:05 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:22:31 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:22:31 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:23:27 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (240.9ms)
+Completed 500 Internal Server Error in 247ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `article' for #<#<Class:0x00007facf3555558>:0x00007facf2698448>
+Did you mean?  @articles):
+     8:       <i class="fa fa-angle-down"></i>
+     9: </div>
+    10: 
+    11: <%= article.titre%>
+    12: <%= article.description%>
+    13: 
+    14: 
+  
+app/views/blogs/index.html.erb:11:in `_app_views_blogs_index_html_erb__335883557408415241_70190389053300'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:23:54 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:23:54 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:25:33 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:25:34 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:27:54 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (7.0ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 2434ms (Views: 2430.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:27:57 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:29:44 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:20
+  Rendered blogs/new.html.erb within layouts/application (10.9ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `title' for #<Blog:0x00007facfbcf0aa8>
+Did you mean?  titre
+               titre?
+               titre=):
+    22:             <div class="panel panel-default">
+    23:               <div class="panel-heading">
+    24:                 <h4 class="panel-title">
+    25:                   <li><a data-toggle="collapse" href="#<%= article.id%>"><%= article.title %></a></li>
+    26:                   <li><%= link_to "Modifier", edit_blog_path(article), class: "modifier" %></li>
+    27:                   <li><%= link_to "Supprimer", blog_path(article), method: :delete, class: "supprimer"%></li>
+    28:                 </h4>
+  
+app/views/blogs/new.html.erb:25:in `block in _app_views_blogs_new_html_erb__4451480062989836417_70190462334040'
+app/views/blogs/new.html.erb:20:in `_app_views_blogs_new_html_erb__4451480062989836417_70190462334040'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:30:18 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:20
+  Rendered blogs/new.html.erb within layouts/application (208.5ms)
+Completed 500 Internal Server Error in 213ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined method `cl_image_tag' for #<#<Class:0x00007facf3555558>:0x00007facfc3af178>):
+    28:                 </h4>
+    29:               </div>
+    30:               <div id="<%= article.id%>" class="panel-collapse collapse">
+    31:                 <div class="panel-body"><%= cl_image_tag article.image %><%= article.description%></div>
+    32:                 <div class="panel-footer">Ajouter le <%= article.created_at%></div>
+    33:               </div>
+    34:             </div>
+  
+app/views/blogs/new.html.erb:31:in `block in _app_views_blogs_new_html_erb__4451480062989836417_70190471413080'
+app/views/blogs/new.html.erb:20:in `_app_views_blogs_new_html_erb__4451480062989836417_70190471413080'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:30:49 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:20
+  Rendered blogs/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 29ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:31:25 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:20
+  Rendered blogs/new.html.erb within layouts/application (5.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/1/edit" for 127.0.0.1 at 2018-06-18 23:31:39 +0200
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/edit.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 41ms (Views: 24.5ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/blogs/1" for 127.0.0.1 at 2018-06-18 23:32:21 +0200
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"AW/j0ZWIMdINRaczCIKCd7S7WqmS6FIrFYmQ3MkusWDzPElTa3xuSe6igpY7y5ox7nycchg5lJkicqeLD4h94w==", "blog"=>{"titre"=>"test article", "description"=>"Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n"}, "commit"=>"ENVOYER", "id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update (1.7ms)[0m  [1m[33mUPDATE "blogs" SET "description" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["description", "Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n"], ["updated_at", "2018-06-18 21:32:21.959079"], ["id", 1]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[35m (0.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:29
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 8ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:32:21 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:20
+  Rendered blogs/new.html.erb within layouts/application (7.2ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 36ms (Views: 34.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:32:25 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.5ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 25ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:32:25 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-18 23:33:05 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:20
+  Rendered blogs/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/blogs" for 127.0.0.1 at 2018-06-18 23:33:16 +0200
+Processing by BlogsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UfvWxF251dNTJK/1ANvBN2dZGcH0PfIW9hOtpaWH7mSjqHxGo02KSLDDilAzktlxPZ7fGn7sNKTB6JryYyEi5w==", "blog"=>{"titre"=>"article 2", "description"=>"Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\nIllud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n"}, "commit"=>"ENVOYER"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:18
+  [1m[36mBlog Create (2.1ms)[0m  [1m[32mINSERT INTO "blogs" ("titre", "description", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["titre", "article 2"], ["description", "Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\nIllud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n"], ["created_at", "2018-06-18 21:33:16.529317"], ["updated_at", "2018-06-18 21:33:16.529317"]]
+  ↳ app/controllers/blogs_controller.rb:18
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:18
+Redirected to http://localhost:3000/blogs
+Completed 302 Found in 8ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:33:16 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 34.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:33:16 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:35:26 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 27ms (Views: 24.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/..." for 127.0.0.1 at 2018-06-18 23:35:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/..."):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+webpacker (3.5.3) lib/webpacker/dev_server_proxy.rb:22:in `perform_request'
+rack-proxy (0.6.4) lib/rack/proxy.rb:57:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2018-06-18 23:47:26 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (8.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 35.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:48:23 +0200
+Processing by BlogsController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Blog::PictureUploader):
+  
+app/models/blog.rb:2:in `<class:Blog>'
+app/models/blog.rb:1:in `<main>'
+app/controllers/blogs_controller.rb:4:in `index'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-18 23:51:00 +0200
+Processing by BlogsController#index as HTML
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Blog::PictureUploader):
+  
+app/models/blog.rb:2:in `<class:Blog>'
+app/models/blog.rb:1:in `<main>'
+app/controllers/blogs_controller.rb:4:in `index'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:04:20 +0200
+Processing by BlogsController#index as HTML
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Blog::PictureUploader):
+  
+app/models/blog.rb:2:in `<class:Blog>'
+app/models/blog.rb:1:in `<main>'
+app/controllers/blogs_controller.rb:4:in `index'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:04:21 +0200
+Processing by BlogsController#index as HTML
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Blog::PictureUploader):
+  
+app/models/blog.rb:2:in `<class:Blog>'
+app/models/blog.rb:1:in `<main>'
+app/controllers/blogs_controller.rb:4:in `index'
+Started GET "/" for 127.0.0.1 at 2018-06-19 00:04:36 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/rubies/ruby-2.5.0/lib/ruby/gems/2.5.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (4681.0ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 4723ms (Views: 4720.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:04:43 +0200
+Processing by BlogsController#index as HTML
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (uninitialized constant Blog::PictureUploader):
+  
+app/models/blog.rb:2:in `<class:Blog>'
+app/models/blog.rb:1:in `<main>'
+app/controllers/blogs_controller.rb:4:in `index'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:05:42 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (4.6ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 46ms (ActiveRecord: 10.9ms)
+
+
+  
+ActionView::Template::Error (private method `format' called for #<PhotoUploader:0x00007fbdd80a0210>):
+    14:     <%= @articles.each do |article| %>
+    15:     <div class="col-xs-12 col-md-9">
+    16:           <div class="thumbnail">
+    17:             <%= cl_image_tag article.image, width: "100%" %>
+    18:             <div class="caption">
+    19:               <h3><%= article.titre%></h3>
+    20:               <p><%= article.description%></p>
+  
+app/views/blogs/index.html.erb:17:in `block in _app_views_blogs_index_html_erb__4522198886035445890_70226674067960'
+app/views/blogs/index.html.erb:14:in `each'
+app/views/blogs/index.html.erb:14:in `_app_views_blogs_index_html_erb__4522198886035445890_70226674067960'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:10:42 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (private method `format' called for #<PhotoUploader:0x00007fbdd1cf9400>):
+    14:     <%= @articles.each do |article| %>
+    15:     <div class="col-xs-12 col-md-9">
+    16:           <div class="thumbnail">
+    17:             <%= cl_image_tag article.image, width: "100%" %>
+    18:             <div class="caption">
+    19:               <h3><%= article.titre%></h3>
+    20:               <p><%= article.description%></p>
+  
+app/views/blogs/index.html.erb:17:in `block in _app_views_blogs_index_html_erb__4522198886035445890_70226665112740'
+app/views/blogs/index.html.erb:14:in `each'
+app/views/blogs/index.html.erb:14:in `_app_views_blogs_index_html_erb__4522198886035445890_70226665112740'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:12:41 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (private method `format' called for #<PhotoUploader:0x00007fbdd6a40948>):
+    14:     <%= @articles.each do |article| %>
+    15:     <div class="col-xs-12 col-md-9">
+    16:           <div class="thumbnail">
+    17:             <%= cl_image_tag article.image, width: "100%" %>
+    18:             <div class="caption">
+    19:               <h3><%= article.titre%></h3>
+    20:               <p><%= article.description%></p>
+  
+app/views/blogs/index.html.erb:17:in `block in _app_views_blogs_index_html_erb__4522198886035445890_70226655870820'
+app/views/blogs/index.html.erb:14:in `each'
+app/views/blogs/index.html.erb:14:in `_app_views_blogs_index_html_erb__4522198886035445890_70226655870820'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:15:27 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (4.1ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (private method `format' called for #<PhotoUploader:0x00007fbdd05ce528>):
+    14:     <%= @articles.each do |article| %>
+    15:     <div class="col-xs-12 col-md-9">
+    16:           <div class="thumbnail">
+    17:             <% cl_image_tag article.image, width: "100%" %>
+    18:             <div class="caption">
+    19:               <h3><%= article.titre%></h3>
+    20:               <p><%= article.description%></p>
+  
+app/views/blogs/index.html.erb:17:in `block in _app_views_blogs_index_html_erb__4522198886035445890_70226687594500'
+app/views/blogs/index.html.erb:14:in `each'
+app/views/blogs/index.html.erb:14:in `_app_views_blogs_index_html_erb__4522198886035445890_70226687594500'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:15:49 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (private method `format' called for #<PhotoUploader:0x00007fbdd869b318>):
+    14:     <%= @articles.each do |article| %>
+    15:     <div class="col-xs-12 col-md-9">
+    16:           <div class="thumbnail">
+    17:             <%= cl_image_tag article.image %>
+    18:             <div class="caption">
+    19:               <h3><%= article.titre%></h3>
+    20:               <p><%= article.description%></p>
+  
+app/views/blogs/index.html.erb:17:in `block in _app_views_blogs_index_html_erb__4522198886035445890_70226678208620'
+app/views/blogs/index.html.erb:14:in `each'
+app/views/blogs/index.html.erb:14:in `_app_views_blogs_index_html_erb__4522198886035445890_70226678208620'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:16:23 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 37ms (Views: 34.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:19:39 +0200
+  [1m[35m (3.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/rubies/ruby-2.5.0/lib/ruby/gems/2.5.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 1375ms (Views: 1342.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:20:01 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  Rendered blogs/new.html.erb within layouts/application (84.3ms)
+Completed 500 Internal Server Error in 91ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `photo_cache' for #<Blog:0x00007f9ac1652dc8>):
+    12:   </div>
+    13:   <div class="form-group">
+    14:    <%= f.input :image, label: :PHOTO %>
+    15:     <%= f.input :photo_cache, as: :hidden %>
+    16:   </div>
+    17:   <%= f.submit "ENVOYER" %>
+    18: <% end %>
+  
+app/views/blogs/new.html.erb:15:in `block in _app_views_blogs_new_html_erb__3266585332127888584_70151291863140'
+app/views/blogs/new.html.erb:6:in `_app_views_blogs_new_html_erb__3266585332127888584_70151291863140'
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:21:07 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 46ms (Views: 29.5ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/blogs/1/edit" for 127.0.0.1 at 2018-06-19 00:21:32 +0200
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/edit.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/1/edit" for 127.0.0.1 at 2018-06-19 00:21:55 +0200
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/edit.html.erb within layouts/application (12.7ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 43ms (Views: 40.9ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blogs/1" for 127.0.0.1 at 2018-06-19 00:22:04 +0200
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"QaK3uck01gCPNPQl8ZRMD1Eb71ZJ2AQQ+2vKLxbKb/az8R07N8CJm2zT0YDC3VRJC9wpjcMJwqLMkP140GyjdQ==", "blog"=>{"titre"=>"test article", "description"=>"Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9abdd2da98 @tempfile=#<Tempfile:/var/folders/9d/pfv0pfvs7gd_jsgdp7wjnwqw0000gn/T/RackMultipart20180619-37719-qvonkr.jpg>, @original_filename="Baleares2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"Baleares2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "image_cache"=>""}, "commit"=>"ENVOYER", "id"=>"1"}
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update (0.4ms)[0m  [1m[33mUPDATE "blogs" SET "image" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["image", "ypbff6drkvvry2qbk820.jpg"], ["updated_at", "2018-06-18 22:22:04.013441"], ["id", 1]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update All (0.4ms)[0m  [1m[33mUPDATE "blogs" SET "image" = 'image/upload/v1529360525/ypbff6drkvvry2qbk820.jpg' WHERE "blogs"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:29
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 1770ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:22:05 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (5.5ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/1/edit" for 127.0.0.1 at 2018-06-19 00:22:09 +0200
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/edit.html.erb within layouts/application (5.6ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/blogs/1" for 127.0.0.1 at 2018-06-19 00:22:15 +0200
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jLdFB3JSVG4+//bgowkMaL+4QKXhWro0jA+VTJFxlSB+5O+FjKYL9d0Y00WQQBQu5X+GfmuLfIa79KIbV9dZow==", "blog"=>{"titre"=>"test article", "description"=>"Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9ac3b113f8 @tempfile=#<Tempfile:/var/folders/9d/pfv0pfvs7gd_jsgdp7wjnwqw0000gn/T/RackMultipart20180619-37719-5n9976.jpg>, @original_filename="ile-vierge.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"ile-vierge.jpg\"\r\nContent-Type: image/jpeg\r\n">, "image_cache"=>""}, "commit"=>"ENVOYER", "id"=>"1"}
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "image" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["image", "nw5pavycimgrdetdg975.jpg"], ["updated_at", "2018-06-18 22:22:15.367957"], ["id", 1]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update All (0.5ms)[0m  [1m[33mUPDATE "blogs" SET "image" = 'image/upload/v1529360536/nw5pavycimgrdetdg975.jpg' WHERE "blogs"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:29
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 1424ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:22:16 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (6.5ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 33ms (Views: 30.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:22:22 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:23:10 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (17.0ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 49.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs/1/edit" for 127.0.0.1 at 2018-06-19 00:23:14 +0200
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/edit.html.erb within layouts/application (5.8ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 34.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/blogs/1" for 127.0.0.1 at 2018-06-19 00:23:23 +0200
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"d+Ix4qaGU/KGat72lHN+ccCru7LSkeCLg41KmljESSaFsZtgWHIMaWWN+1OnOmY3mmx9aVhAJjm0dn3NnmKFpQ==", "blog"=>{"titre"=>"test article", "description"=>"Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9ac3c68030 @tempfile=#<Tempfile:/var/folders/9d/pfv0pfvs7gd_jsgdp7wjnwqw0000gn/T/RackMultipart20180619-37719-159lqrn.jpg>, @original_filename="gwada2.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"gwada2.jpg\"\r\nContent-Type: image/jpeg\r\n">, "image_cache"=>""}, "commit"=>"ENVOYER", "id"=>"1"}
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "image" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["image", "kvc7qwkwk6sspjpiiqpq.jpg"], ["updated_at", "2018-06-18 22:23:23.579948"], ["id", 1]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update All (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "image" = 'image/upload/v1529360604/kvc7qwkwk6sspjpiiqpq.jpg' WHERE "blogs"."id" = $1[0m  [["id", 1]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:29
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 1630ms (ActiveRecord: 4.6ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:23:25 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (6.7ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 36ms (Views: 33.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:23:35 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 32.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:23:50 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (12.6ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/2/edit" for 127.0.0.1 at 2018-06-19 00:23:52 +0200
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/edit.html.erb within layouts/application (6.4ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 45ms (Views: 40.3ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/blogs/2" for 127.0.0.1 at 2018-06-19 00:24:00 +0200
+Processing by BlogsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qEAMAwoVmCd0KDHFhxOUCPjk9uHD3lehDL3eINJK2XxaE6aB9OHHvJfPFGC0WoxOoiMwOkkPkRM7Rul3FOwV/w==", "blog"=>{"titre"=>"article 2", "description"=>"Illud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\nIllud tamen te esse admonitum volo, primum ut qualis es talem te esse omnes existiment ut, quantum a rerum turpitudine abes, tantum te a verborum libertate seiungas; deinde ut ea in alterum ne dicas, quae cum tibi falso responsa sint, erubescas. Quis est enim, cui via ista non pateat, qui isti aetati atque etiam isti dignitati non possit quam velit petulanter, etiamsi sine ulla suspicione, at non sine argumento male dicere? Sed istarum partium culpa est eorum, qui te agere voluerunt; laus pudoris tui, quod ea te invitum dicere videbamus, ingenii, quod ornate politeque dixisti.\r\n\r\n", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f9ac502bc70 @tempfile=#<Tempfile:/var/folders/9d/pfv0pfvs7gd_jsgdp7wjnwqw0000gn/T/RackMultipart20180619-37719-1vpuvht.jpg>, @original_filename="ile-au-fleur.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"blog[image]\"; filename=\"ile-au-fleur.jpg\"\r\nContent-Type: image/jpeg\r\n">, "image_cache"=>""}, "commit"=>"ENVOYER", "id"=>"2"}
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update (0.3ms)[0m  [1m[33mUPDATE "blogs" SET "image" = $1, "updated_at" = $2 WHERE "blogs"."id" = $3[0m  [["image", "hfpf3i8i68lnpiqhl9gi.jpg"], ["updated_at", "2018-06-18 22:24:00.010435"], ["id", 2]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[36mBlog Update All (0.4ms)[0m  [1m[33mUPDATE "blogs" SET "image" = 'image/upload/v1529360641/hfpf3i8i68lnpiqhl9gi.jpg' WHERE "blogs"."id" = $1[0m  [["id", 2]]
+  ↳ app/controllers/blogs_controller.rb:29
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/blogs_controller.rb:29
+Redirected to http://localhost:3000/blogs/new
+Completed 302 Found in 1575ms (ActiveRecord: 4.1ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 00:24:01 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (8.6ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 41ms (Views: 38.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:24:06 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (6.0ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 34ms (Views: 30.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:26:14 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 3388ms (Views: 3384.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:27:14 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.9ms)
+  Rendered shared/_navbar.html.erb (3.6ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 49ms (Views: 45.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:28:15 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (3.8ms)
+  Rendered shared/_footer.html.erb (2.0ms)
+Completed 200 OK in 48ms (Views: 44.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:28:37 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (3.1ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 47ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:28:40 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:28:41 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 28ms (Views: 25.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:28:57 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:35:38 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"bateau"=>"blogs"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:36:08 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"bateau"=>"blogs"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/show, application/show with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/blogs/" for 127.0.0.1 at 2018-06-19 00:36:36 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/bateau" for 127.0.0.1 at 2018-06-19 00:36:41 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"bateau"}
+  Rendering static/bateau.html.erb within layouts/application
+  Rendered static/bateau.html.erb within layouts/application (21.2ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 57ms (Views: 56.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 00:36:44 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/" for 127.0.0.1 at 2018-06-19 09:04:59 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (64.0ms)
+  Rendered shared/_navbar.html.erb (3.0ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 135ms (Views: 129.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-06-19 17:02:05 +0200
+  [1m[35m (2.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/rubies/ruby-2.5.0/lib/ruby/gems/2.5.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2018-06-19 17:02:09 +0200
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (5275.0ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 5344ms (Views: 5341.4ms | ActiveRecord: 0.0ms)
+
+
+  Rendered pages/home.html.erb within layouts/application (1769.3ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 1800ms (Views: 1797.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:02:37 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/bateau" for 127.0.0.1 at 2018-06-19 17:02:41 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"bateau"}
+  Rendering static/bateau.html.erb within layouts/application
+  Rendered static/bateau.html.erb within layouts/application (17.3ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 43ms (Views: 42.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:02:50 +0200
+Processing by StaticController#show as HTML
+  Parameters: {"page"=>"blogs"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template static/blogs, application/blogs with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `show'
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:10:00 +0200
+  
+SyntaxError (/Users/nicolas/code/vamos91/lenapolitain/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get ":bateau" to: "static#show"
+                ^~):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:10:24 +0200
+  
+SyntaxError (/Users/nicolas/code/vamos91/lenapolitain/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get ":bateau" to: "static#bateau"
+                ^~):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:10:50 +0200
+  
+SyntaxError (/Users/nicolas/code/vamos91/lenapolitain/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get "/bateau" to: "static#bateau"
+                ^~):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:13:53 +0200
+  
+SyntaxError (/Users/nicolas/code/vamos91/lenapolitain/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  get '/bateau' to: 'static#bateau'
+                ^~):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:14:29 +0200
+  
+SyntaxError (/Users/nicolas/code/vamos91/lenapolitain/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+  et "/about" to: "application#about"
+              ^~):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:14:37 +0200
+  
+SyntaxError (/Users/nicolas/code/vamos91/lenapolitain/config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+   "/about" to: "application#about"
+            ^~):
+  
+config/routes.rb:3: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:14:58 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (3.5ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (7.0ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 65ms (Views: 38.3ms | ActiveRecord: 7.5ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:15:12 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.5ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 33ms (Views: 30.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bateau" for 127.0.0.1 at 2018-06-19 17:15:18 +0200
+Processing by StaticController#bateau as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::MissingTemplate (Missing template /bateau with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nicolas/code/vamos91/lenapolitain/app/views"
+):
+  
+app/controllers/static_controller.rb:4:in `bateau'
+Started GET "/bateau" for 127.0.0.1 at 2018-06-19 17:16:35 +0200
+Processing by StaticController#bateau as HTML
+  Rendering static/bateau.html.erb within layouts/application
+  Rendered static/bateau.html.erb within layouts/application (13.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 49.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/bateau" for 127.0.0.1 at 2018-06-19 17:16:38 +0200
+Processing by StaticController#bateau as HTML
+  Rendering static/bateau.html.erb within layouts/application
+  Rendered static/bateau.html.erb within layouts/application (10.3ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 37ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:16:39 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 41ms (Views: 26.3ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/bateau" for 127.0.0.1 at 2018-06-19 17:16:42 +0200
+Processing by StaticController#bateau as HTML
+  Rendering static/bateau.html.erb within layouts/application
+  Rendered static/bateau.html.erb within layouts/application (10.0ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 36ms (Views: 35.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:16:50 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/bateau" for 127.0.0.1 at 2018-06-19 17:16:59 +0200
+Processing by StaticController#bateau as HTML
+  Rendering static/bateau.html.erb within layouts/application
+  Rendered static/bateau.html.erb within layouts/application (9.9ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 37.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-06-19 17:17:05 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-06-19 17:18:04 +0200
+Processing by BlogsController#new as HTML
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:21
+  Rendered blogs/new.html.erb within layouts/application (62.5ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 93ms (Views: 89.6ms | ActiveRecord: 0.3ms)
+
+

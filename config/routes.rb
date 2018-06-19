@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   root to: 'pages#home'
-  #get "/:page" => "static#show"
+  get '/bateau' => 'static#bateau'
   resources :blogs
 end

@@ -1,7 +1,7 @@
 class StaticController < ApplicationController
 
-  def show
-    render params[:page]
+  def bateau
+    render "static/bateau"
   end
 
 
