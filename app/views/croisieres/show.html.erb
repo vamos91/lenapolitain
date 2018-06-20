@@ -1,13 +1,34 @@
 <div class="banner-show">
-<%= cl_image_tag @croisiere.photo %>
-      <div class="banner-content">
-     <div class="banner-home">
-           <h1 class="nom"><%= @croisiere.titre %></h1>
-          <h4 class="fonction" style="margin-top: -15px;">Osez l’évasion !</h4>
-          <p class="nom2" style="font-weight: bold;"></p>
-        <p class="presentation">Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique.</p>
-    </div>
-      </div>
+<%= cl_image_tag @croisiere.photo, width: "100%" %>
 </div>
 
-<p class="presentation"><%= @croisiere.description %></p>
+<div class="wrapper padded" style="background-color: white;">
+  <div class="container">
+    <h3 class="" style="color: gray">- <%= @croisiere.titre %> -</h3>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-md-7">
+         <p class="presentation text-design"><%= @croisiere.description %></p>
+         <p style="font-size: 18px; color: #30BCED "><i>- <%= @croisiere.duree%></i><h4>- <%= @croisiere.tarif%>€ -</h4></p>
+
+
+      </div>
+      <div class="col-xs-12 col-md-5">
+         <%= cl_image_tag @croisiere.carte, width: "100%" %>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+<div class="text-center padded" style="background-color: white;">
+  <%= link_to "Réserver", nil ,{:style => 'color: #30BCED; font-size: 16px; border: 1px solid #30BCED;     text-decoration: none; padding: 18px; font-size: 29px;'}%>
+</div>
+<%= render 'shared/slide_bateau' %>
+
+<%= render 'shared/cgv'%>
+
+
+
+
+

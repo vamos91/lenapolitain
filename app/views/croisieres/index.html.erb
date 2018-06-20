@@ -1,5 +1,5 @@
 <div class="wrapper">
-  <h2 class="padded" style="text-align: center; color: gray;">Partez à l'aventure et découvez nos croisières à bord du Napilotain</h2>
+  <h2 class="padded" style="text-align: center; color: gray;">Partez à l'aventure et découvrez nos croisières à bord du Napolitain</h2>
   <div class="container">
     <% @croisieres.each do |croisiere| %>
    <div class="col-sm-6 col-md-4">
@@ -10,7 +10,7 @@
         <p class="duree"><i><%= croisiere.duree %></i></p>
         <% reduce_string = truncate(croisiere.description, length: 200) %>
         <p class="text"><%= reduce_string %></p>
-        <p><%= link_to "Je me lance", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
+        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
       </div>
     </div>
   </div>

@@ -107,54 +107,7 @@ Un grand carré convivial</p>
 
 
 
-
-<div class="wrapper padded">
-
-  <div class="container">
-    <h3 class="" style="color: gray;"> - Visite guidée... - </h3>
-    <hr>
-    <div class="row">
-      <div class="col-xs-12 col-sm-8 col-md-8">
-        <div class="product-slider">
-  <div id="carousel" class="carousel slide" data-ride="carousel">
-    <div class="carousel-inner">
-      <div class="item active"> <%= image_tag "slide2.jpg"%> </div>
-      <div class="item"> <%= image_tag "slide3.jpg"%> </div>
-      <div class="item"> <%= image_tag "slide4.jpg"%> </div>
-      <div class="item"> <%= image_tag "slide5.jpg"%> </div>
-      <div class="item"> <%= image_tag "slide6.jpg"%> </div>
-      <!-- <div class="item"> <%= image_tag "slide7.jpg"%> </div> -->
-    </div>
-  </div>
-  <div class="clearfix">
-    <div id="thumbcarousel" class="carousel slide" data-interval="false">
-      <div class="carousel-inner">
-        <div class="item active">
-          <div data-target="#carousel" data-slide-to="0" class="thumb"><%= image_tag "slide2.jpg"%></div>
-          <div data-target="#carousel" data-slide-to="1" class="thumb"><%= image_tag "slide3.jpg"%> </div>
-          <div data-target="#carousel" data-slide-to="2" class="thumb"><%= image_tag "slide4.jpg"%></div>
-          <div data-target="#carousel" data-slide-to="3" class="thumb"><%= image_tag "slide5.jpg"%></div>
-        </div>
-        <div class="item">
-          <div data-target="#carousel" data-slide-to="5" class="thumb"><%= image_tag "slide6.jpg"%></div>
-          <!-- <div data-target="#carousel" data-slide-to="6" class="thumb"><%= image_tag "slide7.jpg"%></div> -->
-        </div>
-      </div>
-      <!-- /carousel-inner -->
-      <a class="left carousel-control" href="#thumbcarousel" role="button" data-slide="prev"> <i class="fa fa-angle-left" aria-hidden="true"></i> </a> <a class="right carousel-control" href="#thumbcarousel" role="button" data-slide="next"><i class="fa fa-angle-right" aria-hidden="true"></i> </a> </div>
-    <!-- /thumbcarousel -->
-
-  </div>
-</div>
-      </div>
-      <div class="col-xs-12 col-sm-4 col-md-4">
-      <div class="image-slider">
-        <%= image_tag "nap.jpg" %>
-      </div>
-      </div>
-    </div>
-  </div>
-</div>
+<%= render 'shared/slide_bateau' %>
 
 
 
