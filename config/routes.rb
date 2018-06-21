@@ -4,5 +4,5 @@ Rails.application.routes.draw do
   get '/ile_aux_fleurs' => 'static#ile_aux_fleurs'
   resources :blogs
   resources :croisieres
-
+  resources :contact_forms
 end

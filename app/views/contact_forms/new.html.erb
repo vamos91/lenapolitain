@@ -1,0 +1,28 @@
+<div class="wrapper padded" style="background-color: white; height: 100vh;">
+    <div class="container">
+      <h4>Donnez nous des informations sur votre voyage.</h4>
+      <div class="col-md-8 col-md-offset-2">
+         <%= simple_form_for @contact_form do |f| %>
+         <div class="" style="padding: 60px;">
+            <div class="form-group">
+                <%= f.input :firstname, label: false, class: 'form-control', placeholder: 'Votre prénom'%>
+            </div>
+            <div class="form-group">
+                <%= f.input :lastname, label: false, class: 'form-control', placeholder: 'Votre nom'%>
+            </div>
+           <div class="form-group">
+
+               <%= f.input :email, label: false, class: 'form-control', placeholder: 'Votre adresse email (ex: albator@gmail.com)' %>
+           </div>
+           <div class="form-group">
+
+               <%= f.text_area :content, class: 'form-control', rows: 10, placeholder: 'Votre message' %>
+           </div>
+           <div class="form-group">
+               <%= f.submit "ENVOYER", class: 'btn-primary btn-lg' %>
+           </div>
+       <% end %>
+       </div>
+    </div>
+  </div>
+</div>
