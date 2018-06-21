@@ -1,6 +1,6 @@
 class ContactFormMailer < ApplicationMailer
 
-   def contact_email(contact_form)
+   def contact_us(contact_form)
     # @content = contact_form.content
     # @name = contact_form.name
     # @email = contact_form.email

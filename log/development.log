@@ -7929,3 +7929,167 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 62ms (Views: 58.7ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/contact_forms/new" for 127.0.0.1 at 2018-06-21 18:38:04 +0200
+Processing by ContactFormsController#new as HTML
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering contact_forms/new.html.erb within layouts/application
+  Rendered contact_forms/new.html.erb within layouts/application (5.9ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/contact_forms" for 127.0.0.1 at 2018-06-21 18:38:22 +0200
+Processing by ContactFormsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PzsyQToF4qgZQ/KtYYJ0+kHL5RDF8tAeDKm78Z6/d9a5D8dWbqf/r2US2YXI/PdXI+I+jygY05kB34B8M5X/WA==", "contact_form"=>{"firstname"=>"acard", "lastname"=>"nicolas", "email"=>"contact@skypicture.fr", "content"=>"lknkjbkj"}, "commit"=>"ENVOYER"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_forms_controller.rb:8
+  [1m[36mContactForm Create (0.4ms)[0m  [1m[32mINSERT INTO "contact_forms" ("firstname", "lastname", "email", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "acard"], ["lastname", "nicolas"], ["email", "contact@skypicture.fr"], ["content", "lknkjbkj"], ["created_at", "2018-06-21 16:38:22.636234"], ["updated_at", "2018-06-21 16:38:22.636234"]]
+  ↳ app/controllers/contact_forms_controller.rb:8
+ContactFormMailer#contact_email: processed outbound mail in 22.1ms
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/contact_forms_controller.rb:8
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 1.2ms)
+
+
+  
+ActionView::MissingTemplate (Missing template contact_form_mailer/contact_email with "mailer". Searched in:
+  * "contact_form_mailer"
+):
+  
+app/mailers/contact_form_mailer.rb:8:in `contact_email'
+app/models/contact_form.rb:12:in `send_notif'
+app/controllers/contact_forms_controller.rb:8:in `create'
+Started POST "/__web_console/repl_sessions/2535e8ff9b9537f4e745986d797f9ac3/trace" for 127.0.0.1 at 2018-06-21 18:38:45 +0200
+  [1m[36mContactForm Load (0.4ms)[0m  [1m[34mSELECT "contact_forms".* FROM "contact_forms"[0m
+Started POST "/__web_console/repl_sessions/2535e8ff9b9537f4e745986d797f9ac3/trace" for 127.0.0.1 at 2018-06-21 18:40:28 +0200
+Started POST "/__web_console/repl_sessions/2535e8ff9b9537f4e745986d797f9ac3/trace" for 127.0.0.1 at 2018-06-21 18:40:32 +0200
+Started POST "/__web_console/repl_sessions/2535e8ff9b9537f4e745986d797f9ac3/trace" for 127.0.0.1 at 2018-06-21 18:40:36 +0200
+Started POST "/__web_console/repl_sessions/2535e8ff9b9537f4e745986d797f9ac3/trace" for 127.0.0.1 at 2018-06-21 18:40:43 +0200
+Started GET "/contact_forms/new" for 127.0.0.1 at 2018-06-21 18:52:48 +0200
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/rubies/ruby-2.5.0/lib/ruby/gems/2.5.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by ContactFormsController#new as HTML
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering contact_forms/new.html.erb within layouts/application
+  Rendered contact_forms/new.html.erb within layouts/application (74.6ms)
+  Rendered shared/_navbar.html.erb (2.6ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 1531ms (Views: 1468.6ms | ActiveRecord: 11.2ms)
+
+
+Started POST "/contact_forms" for 127.0.0.1 at 2018-06-21 18:52:56 +0200
+Processing by ContactFormsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aCQYywnMh2WCvz8+cRGFAkvoiUBrUUvWTl3VfnMgIlfuEO3cXW6aYv7uFBbYbwavKcFS34a7SFFDK+7z3gqq2Q==", "contact_form"=>{"firstname"=>"acard", "lastname"=>"nicolas", "email"=>"contact@skypicture.fr", "content"=>"grbzrgbrzg"}, "commit"=>"ENVOYER"}
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_forms_controller.rb:8
+  [1m[36mContactForm Create (0.5ms)[0m  [1m[32mINSERT INTO "contact_forms" ("firstname", "lastname", "email", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "acard"], ["lastname", "nicolas"], ["email", "contact@skypicture.fr"], ["content", "grbzrgbrzg"], ["created_at", "2018-06-21 16:52:56.528673"], ["updated_at", "2018-06-21 16:52:56.528673"]]
+  ↳ app/controllers/contact_forms_controller.rb:8
+ContactFormMailer#contact_email: processed outbound mail in 28.5ms
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/contact_forms_controller.rb:8
+Completed 500 Internal Server Error in 191ms (ActiveRecord: 1.5ms)
+
+
+  
+ActionView::MissingTemplate (Missing template contact_form_mailer/contact_email with "mailer". Searched in:
+  * "contact_form_mailer"
+):
+  
+app/mailers/contact_form_mailer.rb:8:in `contact_email'
+app/models/contact_form.rb:12:in `send_notif'
+app/controllers/contact_forms_controller.rb:8:in `create'
+Started POST "/__web_console/repl_sessions/7e9cc3981bdd33b568dd6fb910f41ad2/trace" for 127.0.0.1 at 2018-06-21 18:53:29 +0200
+Started POST "/contact_forms" for 127.0.0.1 at 2018-06-21 19:02:45 +0200
+Processing by ContactFormsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aCQYywnMh2WCvz8+cRGFAkvoiUBrUUvWTl3VfnMgIlfuEO3cXW6aYv7uFBbYbwavKcFS34a7SFFDK+7z3gqq2Q==", "contact_form"=>{"firstname"=>"acard", "lastname"=>"nicolas", "email"=>"contact@skypicture.fr", "content"=>"grbzrgbrzg"}, "commit"=>"ENVOYER"}
+  [1m[36mCroisiere Load (0.6ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/contact_forms_controller.rb:8
+  [1m[36mContactForm Create (0.6ms)[0m  [1m[32mINSERT INTO "contact_forms" ("firstname", "lastname", "email", "content", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["firstname", "acard"], ["lastname", "nicolas"], ["email", "contact@skypicture.fr"], ["content", "grbzrgbrzg"], ["created_at", "2018-06-21 17:02:55.301523"], ["updated_at", "2018-06-21 17:02:55.301523"]]
+  ↳ app/controllers/contact_forms_controller.rb:8
+  Rendering contact_form_mailer/contact_us.html.erb within layouts/mailer
+  Rendered contact_form_mailer/contact_us.html.erb within layouts/mailer (0.4ms)
+  Rendering contact_form_mailer/contact_us.text.erb within layouts/mailer
+  Rendered contact_form_mailer/contact_us.text.erb within layouts/mailer (0.4ms)
+ContactFormMailer#contact_us: processed outbound mail in 462.1ms
+Sent mail to acardnicolas91@gmail.com (32.2ms)
+Date: Thu, 21 Jun 2018 19:02:55 +0200
+From: no-reply@sailing-cruise-adventure.com
+To: acardnicolas91@gmail.com
+Message-ID: <5b2bda3fbe691_26d13fe0bbc44f2468cf@MacBook-Pro-de-nicolas.local.mail>
+Subject: Nouveau message de nicolas, contact@skypicture.fr
+Mime-Version: 1.0
+Content-Type: multipart/alternative;
+ boundary="--==_mimepart_5b2bda3fbbd1e_26d13fe0bbc44f246730";
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+
+----==_mimepart_5b2bda3fbbd1e_26d13fe0bbc44f246730
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+ContactForm#contact_us
+
+, find me in app/views/contact_form_mailer/contact_us.text.erb
+
+
+----==_mimepart_5b2bda3fbbd1e_26d13fe0bbc44f246730
+Content-Type: text/html;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+      /* Email styles need to be inline */
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-offset-3">
+        <p>Vous avez recus un message de votre site web de la part de <strong>nicolas</strong> </p>
+        <p>grbzrgbrzg</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </body>
+</html>
+
+----==_mimepart_5b2bda3fbbd1e_26d13fe0bbc44f246730--
+
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/contact_forms_controller.rb:8
+Redirected to http://localhost:3000/contact_forms/new
+Completed 302 Found in 539ms (ActiveRecord: 10.4ms)
+
+
+Started GET "/contact_forms/new" for 127.0.0.1 at 2018-06-21 19:02:55 +0200
+Processing by ContactFormsController#new as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering contact_forms/new.html.erb within layouts/application
+  Rendered contact_forms/new.html.erb within layouts/application (5.2ms)
+  Rendered shared/_navbar.html.erb (10.9ms)
+  Rendered shared/_footer.html.erb (3.4ms)
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mContactForm Load (0.5ms)[0m  [1m[34mSELECT "contact_forms".* FROM "contact_forms"[0m

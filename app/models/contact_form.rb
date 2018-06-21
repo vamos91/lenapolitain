@@ -9,6 +9,6 @@ class ContactForm < ApplicationRecord
   after_create :send_notif
 
   def send_notif
-    ContactFormMailer.contact_email(self).deliver_now
+    ContactFormMailer.contact_us(self).deliver_now
   end
 end
