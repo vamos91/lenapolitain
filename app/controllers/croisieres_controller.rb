@@ -36,11 +36,6 @@ class CroisieresController < ApplicationController
     redirect_to new_croisiere_path
   end
 
-  def reduce_string
-    find_croisiere
-    @croisiere = @croisieres.truncate(10)
-  end
-
   private
 
    def find_croisiere

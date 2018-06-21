@@ -12,7 +12,10 @@
 
           <%= link_to "Croisières à thèmes",croisieres_path, class: "dropdown-toggle" %>
           <ul class="dropdown-menu">
-            <li><a href="#"><strong>Martinique</strong></a></li>
+            <% @croisieres_napolitain.each do |croisiere|%>
+              <li><%= link_to croisiere.titre, croisiere_path(croisiere) %></li>
+            <% end %>
+            <!-- <li><a href="#"><strong>Martinique</strong></a></li>
             <li><a href="#">Croisière île aux fleurs</a></li>
             <li><a href="#">Croisière des trois Pitons</a></li>
             <li><a href="#">Croisière Pirates des Grenadines</a></li>
@@ -29,13 +32,14 @@
             <li><a href="#"><strong>Les baléares</strong></a></li>
             <li><a href="#">Croisière Ibiza-Formentera</a></li>
             <li><a href="#">Croisière Ibiza-Formentera-Majorque</a></li>
-            <li><a href="#">Mini croisière Baléares</a></li>
+            <li><a href="#">Mini croisière Baléares</a></li> -->
             <li class="divider"></li>
             <li><a href="#"><strong>Croisière Kite</strong></a></li>
             <li class="divider"></li>
             <li><a href="#"><strong>Croisière à la carte</strong></a></li>
             <li class="divider"></li>
             <li><a href="#"><strong>La transatlantique</strong></a></li>
+
           </ul>
         </li>
         </li>
