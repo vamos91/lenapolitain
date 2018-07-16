@@ -1,0 +1,32 @@
+   <% @reviews.each do |review| %>
+ <% croisiere = Croisiere.find(review.croisiere_id) %>
+    <div class="media" style="border-top: 1px solid lightgrey; padding: 15px; background-color: white">
+      <div class="media-left">
+
+            </div>
+            <div class="media-body" style="padding-left: 15px; border-left: 1px solid lightgrey">
+              <h4 class="media-heading" style="font-size: 18px;">
+                <%= review.nom %>
+               <%= render 'reviews/rating', stars: review.rating %>
+              </h4>
+              <p style="font-size: 12px;">Le <%= I18n.l(review.created_at, format: :short) %></p>
+              <p style="font-size: 15px; color: gray; text-align: justify;"> <%= review.description %></p>
+            </div>
+          </div>
+           <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

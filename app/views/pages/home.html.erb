@@ -1,0 +1,214 @@
+<div class="banner" style="">
+     <div class="banner-home">
+           <h1 class="nom">SAILING CRUISE ADVENTURE</h1>
+          <h4 class="fonction" style="margin-top: -15px;">Vous êtes le capitaine.</h4>
+          <p class="nom2" style="font-weight: bold;"></p>
+        <p class="presentation">Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique.</p>
+    </div>
+</div>
+
+<div class="intro" style="background-color: white; padding-top: 100px;">
+ <h2 class="titre">Nous nous adaptons à vos envies</h2>
+
+
+
+<div class="wrapper padded" style="background-color: white;">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12 col-md-6">
+        <div class="padded">
+          <%= image_tag 'avatar-presc.png', class: 'avatar'%>
+          <div class="padded">
+            <%= image_tag 'boue.png', class: 'icone-avatar'%>
+            <p class="" style="font-size: 20px;">Votre second, Priscillia Soriano</p>
+          <p style="font-weight: lighter;">Skipper pro, Diplômée de Marine marchande. Nombreuses transatlantiques et navigations aux Antilles dans le cadre d'un projet solidaire et missions scientifiques Zone Bleue en Atlantique et Caraïbes (2015-2018).</p>
+          <ul class="list-inline">
+          <li><a href=""><i class="fab fa-youtube"></i></i></a></li>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="padded">
+          <%= image_tag 'avatar-brice.png', class: 'avatar'%>
+           <div class="padded">
+            <%= image_tag 'casquette.png', class: 'icone-avatar'%>
+            <p class="" style="font-size: 20px;">Votre capitaine, Brice Dufour</p>
+          <p style="font-weight: lighter;">Skipper pro. Diplômé de Marine marchande, Hauturier (2013). Skipper de croisières « voile active » en Méditerranée (France,Grèce,Italie,Gibraltar – 2013-2015) et en Transatlantique (2017).</p>
+          <ul class="list-inline">
+          <li><a href=""><i class="fab fa-youtube"></i></i></a></li>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="banner-transatlantique banner-parallax">
+ <div class="container">
+ </div><p style="color: white;">A bord du Napolitain, découvrez les Baléares et les antilles autrement, au programme de vos vacances et selon vos envies, nous partirons ensemble à la découverte des criques sauvages pour des baignades paradisiaques, nous partagerons des apéros de tapas et des barbecues de poissons frais, péchés ensemble pendant la journée.</p>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="destination" style="margin-bottom: 50px; padding-top: 100px;">
+  <h2 class="" style="text-align: center; color: gray;">Découvrez nos destinations à bord du Napolitain</h2>
+  <p style="margin-bottom: 20px; text-align: center; color: gray; padding: 50px;">De la croisière privée, à la croisière Kite sur les plus beaux spots des Antilles ou en Transatlantique, votre Aventure est à portée d'étrave du "Napolitain".</p>
+  <div class="row row-destination">
+  <div class="col-xs-12 col-md-6 test">
+    <div class="card">
+      <%= link_to croisieres_path do%>
+      <%= image_tag 'martinique.jpg' %>
+      <%end%>
+      <p>Croisière privée à thème</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6 test">
+    <div class="card">
+      <%= link_to "/croisiere_kite" do%>
+       <%= image_tag 'kite-surf.jpg' %>
+       <%end%>
+       <p>Croisière Kite</p>
+    </div>
+  </div>
+</div>
+<div class="row row-destination">
+  <div class="col-xs-12 col-md-6 test">
+    <div class="card">
+       <%= image_tag 'saint-martin.jpg' %>
+       <p>Croisière privée à la carte</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-md-6 test">
+    <div class="card">
+       <%= image_tag 'bateau6.jpg' %>
+       <p>Transatlantique</p>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="text-center">
+  <%= link_to "Réserver", new_contact_form_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
+</div>
+
+
+
+<div class="wrapper" style="margin-top: 150px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="card-kite">
+          <div class="">
+            <h3>Embarquez pour 7 ou 10 jours de pur ride.</h3>
+          <p class="">LES CROISIERES KITE (A partir de 990 euros/personne en pension complète pour toute réservation avant le 30 Novembre 2018!*).</br>
+            <br/><%= link_to "J'en profite", "/croisiere_kite" ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 20px;'}%>
+          </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-6">
+        <div class="card-kite card-transatlantique">
+          <div class="">
+            <h3>Vivez votre rêve : la transatlantique</h3>
+          <p class="">Vivez une expérience unique, dépassez vos limites ! Envie de sentir le vent du large balayer votre visage, entendre le souffle de l'océan vrombir à vos oreilles.</br>
+            <br/><%= link_to "J'en profite", "/croisiere_kite" ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 20px;'}%>
+          </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="wrapper">
+  <h2 class="padded" style="text-align: center; color: gray;">Partez à l'aventure et découvrez nos croisières à bord du Napolitain</h2>
+  <div class="container">
+    <% @croisieres.each do |croisiere| %>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= cl_image_tag croisiere.photo%>
+      <div class="caption">
+        <h3><%= croisiere.titre %> - <%= croisiere.croisiere_destination %> - </h3>
+        <p class="duree"><i><%= croisiere.duree %></i></p>
+        <% reduce_string = truncate(croisiere.description, length: 200) %>
+        <p class="text"><%= reduce_string %></p>
+        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  </div>
+</div>
+
+
+<div class="text-center padded">
+  <%= link_to "Réserver", new_contact_form_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
+</div>
+
+
+
+
+
+
+<div class="banner-transatlantique" style="margin-top: 50px;">
+  <div class="center">
+    <h3>Vivez votre rêve : la transatlantique</h3>
+  <p>Vivez une expérience unique, dépassez vos limites! Envie de sentir le vent du large balayer votre visage, entendre le souffle de l'océan vrombir à vos oreilles, gouter le sel de la vie et revenir rincé de sel et de soleil après des milliers de milles à votre compteur ? Embarquez sur le « Napolitain » pour une transatlantique.</p>
+  </div>
+ <div class="text-center center" style="padding-top: 50px;">
+  <%= link_to "Demandez un devis sur-mesure", new_contact_form_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
+</div>
+</div>
+
+
+
+
+
+
+
+<div class="wrapper padded" style="background-color: gray; margin-top: 0px;">
+  <div class="container">
+    <h3 style="color: white;">Je prépare mon voyage</h3>
+    <hr>
+    <div class="trip-advice">
+      <div class="text-advice">
+      <h3>Comment préparer votre voyage</h3>
+      <p>Bien préparer son voyage.Organiser ses vacances à l'étranger peut être parfois stressant. Nous vous accompagnons et vous aidons lors de chaque étape des préparatifs du voyage du début jusqu'à la fin de votre séjour.</p>
+      <%= link_to "En savoir plus", "/mavalise", class: "btn btn-primary"%>
+      </div>
+      <%= image_tag 'preparation.jpg'%>
+    </div>
+  </div>
+</div>
+
+
+
+
+

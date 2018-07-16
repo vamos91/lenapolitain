@@ -1,0 +1,157 @@
+<div class="banner-show">
+<%= cl_image_tag @croisiere.photo, width: "100%" %>
+</div>
+<div class="wrapper" style="background-color: white;">
+  <div class="container">
+    <h3 class="" style="color: gray">- <%= @croisiere.titre %> - <%= @croisiere.croisiere_destination.upcase %> -</h3>
+    <hr>
+    <div class="row" style="margin-bottom: 100px;">
+      <div class="col-xs-12 col-md-7">
+         <p class="presentation text-design"><%= @croisiere.description %></p>
+         <%if @croisiere.croisiere_destination != 'Baléares'%>
+         <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+            Infos pratiques
+          </button></p>
+          <%end%>
+          <%= cl_image_tag @croisiere.carte, width: "100%" %>
+           <div class="padded">
+             <% unless @reviews.count == 0 %>
+            <%= @reviews.count %> Commentaires:
+            <% end %>
+          <%= render 'reviews/reviews' %>
+           </div>
+      </div>
+      <div class="col-xs-12 col-md-5" style="padding-left: 50px;">
+        <div class="reservation well" style="background-color: white; padding: 50px;">
+          A partir de <strong><%= @croisiere.tarif%>€</strong><p style="font-size: 18px; color: #30BCED "><i>- <%= @croisiere.duree%></i></p>
+          <hr>
+          <%= simple_form_for @contact_form do |f| %>
+          <div>
+            <div class="form-group">
+                <%= f.input :date_arrivee, label: "Date d'arrivée", class: 'form-control',placeholder: 'jj/mm/aaaa'%>
+            </div>
+            <hr>
+            <div class="form-group">
+                <%= f.input :nb_adulte, label: false, class: 'form-control', placeholder: 'Nombre de marins'%>
+            </div>
+           <div class="form-group">
+               <%= f.input :nb_enfant, label: false, class: 'form-control', placeholder: 'Nombre de marins juniors' %>
+           </div>
+           <div class="form-group"  style="display: none">
+               <%= f.input :destination, :input_html => { :value => @croisiere.titre } %>
+           </div>
+           <div class="form-group">
+               <%= f.input :email, label: false, class: 'form-control', placeholder: 'Votre mail' %>
+           </div>
+           <div class="form-group text-center">
+               <%= f.submit "Demande de réservation", class: 'btn-primary btn-lg' %>
+               <p class="padded" style="font-size: 10px;">Vous ne serez débité que si vous confirmez</p>
+           </div>
+       <% end %>
+     </div>
+        </div>
+          <div class="reservation well" style="background-color: white; padding: 50px;">
+          Les petits plus...
+          <hr>
+          <ul class="list-unstyled" style="line-height: 2.6;">
+            <li><%= image_tag 'sono.png', class: 'icone-avatar'%> Votre musique à bord</li>
+            <li><%= image_tag 'google.png', class: 'icone-avatar'%> Snorkeling</li>
+            <li><%= image_tag 'gouvernail3.png', class: 'icone-avatar'%> Tenez la bar !</li>
+            <li><%= image_tag 'bbq.png', class: 'icone-avatar'%> BBQ</li>
+          </ul>
+         </div>
+        <div class="padded">
+            <% @croisieres_par_destination.each do |croisiere| %>
+           <div class="col-xs-12 well">
+            <div class="thumbnail">
+              <%= cl_image_tag croisiere.photo%>
+              <div class="caption">
+                <h3><%= croisiere.titre %> - <%= croisiere.croisiere_destination %> - </h3>
+                <p class="duree"><i><%= croisiere.duree %></i></p>
+                <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
+              </div>
+            </div>
+          </div>
+          <% end %>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="padded"></div>
+
+
+
+<%= render 'shared/slide_bateau' %>
+
+<div class="container">
+  <div class="row padded">
+           <div class="container">
+          <%= render 'reviews/reviews_form' %>
+           </div>
+      </div>
+</div>
+
+
+
+<%= render 'shared/cgv'%>
+
+
+<!--
+  <div class="container padded">
+    <% @croisieres_par_destination.each do |croisiere| %>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= cl_image_tag croisiere.photo%>
+      <div class="caption">
+        <h3><%= croisiere.titre %> - <%= croisiere.croisiere_destination %> - </h3>
+        <p class="duree"><i><%= croisiere.duree %></i></p>
+        <% reduce_string = truncate(croisiere.description, length: 200) %>
+        <p class="text"><%= reduce_string %></p>
+        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  </div> -->
+
+
+
+
+
+
+
+
+          <!-- Modal -->
+          <div class="container">
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="">
+      <div class="">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Infos pratiques</h4>
+      </div>
+      <div class="modal-body" style="font-size: 10px;">
+         <% if @croisiere.croisiere_destination == 'Martinique'%>
+          <%= render "shared/infos_martinique"%>
+          <%else%>
+          <%if @croisiere.croisiere_destination == 'Guadeloupe'%>
+          <%= render 'shared/infos_guadeloupe'%>
+          <%else%>
+          <%if @croisiere.croisiere_destination == 'Saint-Martin'%>
+          <%= render 'shared/infos_st_martin'%>
+          <%end%>
+        <%end%>
+        <%end%>
+      </div>
+    </div>
+  </div>
+</div>
+          </div>
+
+
+
+

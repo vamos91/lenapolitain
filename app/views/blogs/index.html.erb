@@ -1,0 +1,37 @@
+<div class="banner blog center" style="margin-bottom: 100px;">
+      <div class="">
+     <div class="banner-home">
+           <h1 class="nom"><strong>BLOG</strong></h1>
+          <h4 class="fonction" style="font-style: 30px;">La vie à bord</h4>
+    </div>
+      </div>
+</div>
+
+
+<div class="container">
+  <div class="col">
+    <% @articles.each do |article| %>
+    <div class="col-xs-12">
+          <div class="thumbnail thumbnail-blog">
+            <% if article.video != "" %>
+              <% @v_url = article.video %>
+              <% @video_id = (/([\w-]{11})/.match(@v_url)).to_s %>
+              <% @embed_code = "<iframe width='100%' height='360' src='https://www.youtube.com/embed/#{@video_id}' frameborder='0' allowfullscreen></iframe>" %>
+              <div class="video_blog"><p><%= raw(@embed_code) %></p></div>
+            <% end %>
+            <%= cl_image_tag article.image, width: "100%" %>
+            <div class="caption">
+              <h3 style="color: #30BCED;"><%= article.titre%></h3>
+              <p class="" style="font-size: 10px; ">Ajouter le <%= article.created_at%></p>
+              <% reduce_string = truncate(article.description, length: 400) %>
+              <p><%= reduce_string %></p>
+              <%= link_to "Lire la suite",blog_path(article), class: "btn btn-primary"%>
+            </div>
+          </div>
+    </div>
+    <% end %>
+  </div>
+</div>
+
+
+

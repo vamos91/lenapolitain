@@ -1,0 +1,24 @@
+<div class="wrapper">
+  <h2 class="padded" style="text-align: center; color: gray;">Partez à l'aventure et découvrez nos croisières à bord du Napolitain</h2>
+  <div class="container">
+    <% @croisieres.each do |croisiere| %>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= cl_image_tag croisiere.photo%>
+      <div class="caption">
+        <h3><%= croisiere.titre %> - <%= croisiere.croisiere_destination %> - </h3>
+        <p class="duree"><i><%= croisiere.duree %></i></p>
+        <% reduce_string = truncate(croisiere.description, length: 200) %>
+        <p class="text"><%= reduce_string %></p>
+        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  </div>
+</div>
+
+
+
+
+

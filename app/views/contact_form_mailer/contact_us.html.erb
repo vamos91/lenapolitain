@@ -1,0 +1,19 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-offset-3">
+        <p>Vous avez recus un message de votre site web de la part de <strong><%= @contact_form.lastname || @contact_form.email %></strong> </p>
+
+        <p><%= @contact_form.content %></p>
+        <p>Destination souhaitée: <%= @contact_form.destination%></p>
+        <p>Date d'arrivée souhaitée: <%= @contact_form.date_arrivee%></p>
+        <p>Date de départ souhaitée: <%= @contact_form.date_depart%></p>
+        <p>Nombre d'adultes: <%= @contact_form.nb_adulte%></p>
+        <p>Nombre d'enfants: <%= @contact_form.nb_enfant%></p>
+        <p>Age des enfants: <%= @contact_form.age_enfant%></p>
+        <p>Contact: <%= @contact_form.email%></p>
+      </div>
+    </div>
+  </div>
+</div>
+

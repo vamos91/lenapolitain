@@ -1,0 +1,27 @@
+<% unless @article.image.blank?%>
+  <div class="banner-show">
+  <%= cl_image_tag @article.image, width: "100%" %>
+  </div>
+<% end %>
+
+<% unless @article.video.blank?%>
+<% @v_url = @article.video %>
+<% @video_id = (/([\w-]{11})/.match(@v_url)).to_s %>
+<div class="video" style="margin-bottom: 200px">
+  <% @embed_code = "<iframe width='100%' src='https://www.youtube.com/embed/#{@video_id}'?autoplay=1&amp;rel=0&amp;controls=0&amp;showinfo=0&loop=1 frameborder='0' allowfullscreen></iframe>" %>
+              <div id="myVideo" style="z-index: 1;"><p><%= raw(@embed_code) %></p></div>
+</div>
+<% end %>
+
+
+<div class="wrapper padded">
+  <div class="container">
+    <div class="titre text-center padded">
+      <h3><%= @article.titre %></h3>
+      <p><i>Le <%= @article.created_at %></i></p>
+    </div>
+    <div class="text-design">
+      <p><%= @article.description %></p>
+    </div>
+  </div>
+</div>

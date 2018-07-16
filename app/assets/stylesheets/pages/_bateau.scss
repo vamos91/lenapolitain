@@ -1,0 +1,35 @@
+.bateau{
+  background-image: image-url('banner-bateau.jpg');
+}
+
+.bateau-feature-img img{
+  width: 100%;
+}
+
+.bateau-feature img{
+  width: 23%;
+}
+
+.features p{
+  font-size: 17px;
+}
+
+.features .icone{
+  font-size: 50px;
+}
+
+.bateau-feature p{
+  color: white;
+  text-align: justify;
+}
+
+.features img{
+  width: 35%;
+}
+
+.feature-container{
+  position: absolute;
+  width: 100%;
+  background-color: rgba(0,0,0,0.4);
+  bottom: 0;
+}

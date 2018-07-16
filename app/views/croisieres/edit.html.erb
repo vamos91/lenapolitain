@@ -1,0 +1,35 @@
+<div class="wrapper padded" style="margin-top: 100px; background-color: white;">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-xs-12 well">
+         <p class="text-center">MODIFIER UNE CROISIERE</p>
+<%= simple_form_for(@croisiere) do |f| %>
+<div class="form-group">
+  <%= f.input :titre, label: false, placeholder: 'Met nous un titre bien sympa !' %>
+</div>
+<div class="form-group">
+  <%= f.input :croisiere_destination, label: false, placeholder: 'Cest ou ton histoire !' %>
+</div>
+  <div class="form-group">
+      <%= f.text_area :description, label: :DESCRIPTION,rows: 10, placeholder: "Tu nous emmènes où ?? aller fait moi rever", class: 'form-control'%>
+  </div>
+  <div class="form-group">
+   <%= f.input :photo, label: :PHOTO %>
+    <%= f.input :photo_cache, as: :hidden %>
+  </div>
+  <div class="form-group">
+   <%= f.input :carte, label: :CARTE %>
+    <%= f.input :carte_cache, as: :hidden %>
+  </div>
+  <div class="form-group">
+  <%= f.input :duree, label: false, placeholder: 'Ex: 7 jours/6 nuits' %>
+</div>
+  <div class="form-group">
+  <%= f.input :tarif, label: false, placeholder: 'Ex: 4550' %>
+</div>
+  <%= f.submit "ENVOYER" %>
+<% end %>
+      </div>
+      </div>
+    </div>
+  </div>
