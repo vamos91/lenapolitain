@@ -81,7 +81,7 @@
       <%= link_to croisieres_path do%>
       <%= image_tag 'martinique.jpg' %>
       <%end%>
-      <p>Croisière privée à thème</p>
+      <p><%= link_to "Croisière privée à thème", croisieres_path, {:style => 'color: white; text-decoration: none;'}%></p>
     </div>
   </div>
   <div class="col-xs-12 col-md-6 test">
@@ -89,7 +89,7 @@
       <%= link_to "/croisiere_kite" do%>
        <%= image_tag 'kite-surf.jpg' %>
        <%end%>
-       <p>Croisière Kite</p>
+       <p><%= link_to "Croisière Kite", "/croisiere_kite", {:style => 'color: white; text-decoration: none;'}%></p>
     </div>
   </div>
 </div>
@@ -97,7 +97,7 @@
   <div class="col-xs-12 col-md-6 test">
     <div class="card">
        <%= image_tag 'saint-martin.jpg' %>
-       <p>Croisière privée à la carte</p>
+       <p><%= link_to "Croisière privée à la carte", "/alacarte", {:style => 'color: white; text-decoration: none;'}%></p>
     </div>
   </div>
   <div class="col-xs-12 col-md-6 test">
