@@ -53,14 +53,19 @@
 
 
 
-<div class="navbar navbar-mobile hidden-md hidden-lg">
+<div class="navbar navbar-mobile hidden-md hidden-lg hidden-sm">
     <div class="dropdown">
      <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
-      <ul class="dropdown-menu dropdown-menu-right">
-        <li><%= link_to "A propos de l'artiste"%></li>
-        <li><%= link_to "Gallerie"%></li>
-        <li><%= link_to "Blog"%></li>
-        <li><%= link_to "Contact" %></li>
+      <ul class="dropdown-menu dropdown-menu-left">
+        <li><%= link_to "Accueil",root_path %></li>
+        <li><%= link_to "Croisières privées",croisieres_path %></li>
+        <li><%= link_to "Croisière à la carte", "/alacarte"%></li>
+        <li><%= link_to "La transatlantique", "/alacarte"%></li>
+        <li><%= link_to "Croisière Kite Surf", "/croisiere_kite"%></li>
+        <li><%= link_to "Equipage", "/about"%></li>
+        <li><%= link_to "Le bateau", "/bateau" %></li>
+        <li><%= link_to "Informations et sécurité", '/info-secu' %></li>
+        <li><%= link_to "Blog", blogs_path %></li>
       </ul>
     </div>
   </div>

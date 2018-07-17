@@ -9,12 +9,35 @@
       <div class="col-xs-12 col-md-7">
          <p class="presentation text-design"><%= @croisiere.description %></p>
          <%if @croisiere.croisiere_destination != 'Baléares'%>
-         <p><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+         <p><button type="button" class="btn btn-primary hidden-xs" data-toggle="modal" data-target="#myModal">
             Infos pratiques
           </button></p>
           <%end%>
           <%= cl_image_tag @croisiere.carte, width: "100%" %>
-           <div class="padded">
+
+
+
+
+
+
+
+
+<div class="padded">
+  <button class="btn btn-primary hidden-md hidden-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+              Voir les commentaires
+            </button>
+
+</div>
+
+            <div class="collapse" id="collapseExample">
+              <div class="">
+                 <% unless @reviews.count == 0 %>
+                  <%= @reviews.count %> Commentaires:
+                  <% end %>
+                <%= render 'reviews/reviews' %>
+              </div>
+            </div>
+           <div class="padded reviews hidden-xs">
              <% unless @reviews.count == 0 %>
             <%= @reviews.count %> Commentaires:
             <% end %>

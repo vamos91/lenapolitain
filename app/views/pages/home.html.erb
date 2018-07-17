@@ -3,13 +3,16 @@
            <h1 class="nom">SAILING CRUISE ADVENTURE</h1>
           <h4 class="fonction" style="margin-top: -15px;">Vous êtes le capitaine.</h4>
           <p class="nom2" style="font-weight: bold;"></p>
-        <p class="presentation">Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique.</p>
+        <p class="presentation hidden-xs">Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique.</p>
+ <div class="text-center hidden-md hidden-lg hidden-sm padded">
+  <%= link_to "Nos croisieres", croisieres_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
+</div>
     </div>
 </div>
 
 
 
-<div class="padded" style="background-color: white;">
+<div class="padded hidden-xs" style="background-color: white;">
   <div class="row row-destination">
   <div class="col-xs-12 col-md-2 ">
     <div class="card feature-card">
@@ -104,7 +107,7 @@
 </div>
 
 
-<div class="banner-transatlantique banner-parallax">
+<div class="banner-transatlantique banner-parallax hidden-xs">
  <div class="container">
  </div><p style="color: white;">A bord du Napolitain, découvrez les Baléares et les antilles autrement, au programme de vos vacances et selon vos envies, nous partirons ensemble à la découverte des criques sauvages pour des baignades paradisiaques, nous partagerons des apéros de tapas et des barbecues de poissons frais, péchés ensemble pendant la journée.</p>
 
@@ -120,7 +123,7 @@
 
 
 
-<div class="destination" style="margin-bottom: 50px; padding-top: 100px;">
+<div class="destination hidden-xs" style="margin-bottom: 50px; padding-top: 100px;">
   <h2 class="" style="text-align: center; color: gray;">Découvrez nos destinations à bord du Napolitain</h2>
   <p style="margin-bottom: 20px; text-align: center; color: gray; padding: 50px;">De la croisière privée, à la croisière Kite sur les plus beaux spots des Antilles ou en Transatlantique, votre Aventure est à portée d'étrave du "Napolitain".</p>
   <div class="row row-destination">
@@ -164,7 +167,7 @@
 
 
 
-<div class="wrapper" style="margin-top: 150px;">
+<div class="wrapper hidden-xs" style="margin-top: 150px;">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6">
@@ -225,7 +228,7 @@
 
 
 
-<div class="banner-transatlantique" style="margin-top: 50px;">
+<div class="banner-transatlantique hidden-xs" style="margin-top: 50px;">
   <div class="center">
     <h3>Vivez votre rêve : la transatlantique</h3>
   <p>Vivez une expérience unique, dépassez vos limites! Envie de sentir le vent du large balayer votre visage, entendre le souffle de l'océan vrombir à vos oreilles, gouter le sel de la vie et revenir rincé de sel et de soleil après des milliers de milles à votre compteur ? Embarquez sur le « Napolitain » pour une transatlantique.</p>
@@ -246,12 +249,15 @@
     <h3 style="color: white;">Je prépare mon voyage</h3>
     <hr>
     <div class="trip-advice">
-      <div class="text-advice">
+      <div class="text-advice hidden-xs">
       <h3>Comment préparer votre voyage</h3>
       <p>Bien préparer son voyage.Organiser ses vacances à l'étranger peut être parfois stressant. Nous vous accompagnons et vous aidons lors de chaque étape des préparatifs du voyage du début jusqu'à la fin de votre séjour.</p>
       <%= link_to "En savoir plus", "/mavalise", class: "btn btn-primary"%>
       </div>
       <%= image_tag 'preparation.jpg'%>
+    </div>
+    <div class="hidden-md hidden-sm hidden-lg">
+      <%= link_to "En savoir plus", "/mavalise", class: "btn btn-primary"%>
     </div>
   </div>
 </div>
