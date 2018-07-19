@@ -1,7 +1,7 @@
 <div class=" footer">
 <div class="row">
   <div class="col-xs-12 col-md-4 liste-croisiere">
-    <h3>Croisière à thème</h3>
+    <h3>Croisières à thème</h3>
     <ul class="list-unstyled" style="color: white;">
       <% @croisieres_napolitain.each do |croisiere|%>
         <li><%= link_to croisiere.titre, croisiere_path(croisiere) %></li>

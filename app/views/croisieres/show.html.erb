@@ -21,13 +21,13 @@
 
 
 
-
+<% unless @reviews.count == 0 %>
 <div class="padded">
   <button class="btn btn-primary hidden-md hidden-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
               Voir les commentaires
             </button>
-
 </div>
+<%end%>
 
             <div class="collapse" id="collapseExample">
               <div class="">
@@ -44,7 +44,7 @@
           <%= render 'reviews/reviews' %>
            </div>
       </div>
-      <div class="col-xs-12 col-md-5" style="padding-left: 50px;">
+      <div class="col-xs-12 col-md-5 col-2-show">
         <div class="reservation well" style="background-color: white; padding: 50px;">
           A partir de <strong><%= @croisiere.tarif%>€</strong><p style="font-size: 18px; color: #30BCED "><i>- <%= @croisiere.duree%></i></p>
           <hr>

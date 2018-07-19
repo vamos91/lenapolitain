@@ -6,7 +6,9 @@ end
 def create
   @contact_form = ContactForm.new(contact_page_params)
   if @contact_form.save
-    redirect_to root_path
+    flash[:notice] = "Aucun vol en pour le moment."
+    redirect_to root_path, notice: 'Message envoyé'
+    flash[:notice] = "Aucun vol en  pour le moment."
   end
 end
 
