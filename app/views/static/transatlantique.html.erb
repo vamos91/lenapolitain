@@ -3,21 +3,70 @@
      <div class="banner-home">
       <h1 class="nom"><strong>La transatlantique</strong></h1>
            <h1 class="nom"><strong>Vivez une expérience unique, dépassez vos limites!</strong></h1>
-          <h4 class="fonction" style="font-style: 30px;">Envie de sentir le vent du large balayer votre visage, entendre le souffle de l'océan vrombir à vos oreilles, gouter le sel de la vie et revenir rincé de sel et de soleil après des milliers de milles à votre compteur ? Embarquez sur le « Napolitain » pour une transatlantique.</h4>
-
+  <p class="hidden-xs">Embarquez avec un équipage aguerri et professionnel, sur un bateau sûr, marin, performant et parfaitement préparé à ce parcours.</p>
     </div>
       </div>
-      <i class="fa fa-angle-down"></i>
 </div>
 
 
-<h3 class="text-center">LA TRANSATLANTIQUE</h3>
+<h3 class="text-center">LA TRANSATLANTIQUE AVEC...</h3>
+
+
+
+
+
+<div class="container">
+    <div class="row text-center">
+      <div class="col-xs-12 col-md-6">
+        <div class="padded">
+          <%= image_tag 'avatar-presc.jpg', class: 'avatar'%>
+          <div class="padded">
+            <%= image_tag 'boue.png', class: 'icone-avatar'%>
+            <p class="" style="font-size: 20px;">Votre second, Priscillia Soriano</p>
+          <p style="font-weight: lighter;">Skipper pro, Diplômée de Marine marchande. Nombreuses transatlantiques et navigations aux Antilles dans le cadre d'un projet solidaire et missions scientifiques Zone Bleue en Atlantique et Caraïbes (2015-2018).</p>
+          <ul class="list-inline">
+          <li><a href=""><i class="fab fa-youtube"></i></a></li>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-12 col-md-6">
+        <div class="padded">
+          <%= image_tag 'avatar-brice.jpg', class: 'avatar'%>
+           <div class="padded">
+            <%= image_tag 'casquette.png', class: 'icone-avatar'%>
+            <p class="" style="font-size: 20px;">Votre capitaine, Brice Dufour</p>
+          <p style="font-weight: lighter;">Skipper pro. Diplômé de Marine marchande, Hauturier (2013). Skipper de croisières « voile active » en Méditerranée (France,Grèce,Italie,Gibraltar – 2013-2015) et en Transatlantique (2017).</p>
+          <ul class="list-inline">
+          <li><a href=""><i class="fab fa-youtube"></i></i></a></li>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+        </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+<div class="trans-map padded">
+  <%= image_tag 'carte-transatlantique.jpg', width: '100%'%>
+</div>
+
+
+
+
+
 
 <div class="wrapper padded">
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-md-6">
-        <p class="text-design">Embarquez avec un équipage aguerri et professionnel, sur un bateau sûr, marin, performant et parfaitement préparé à ce parcours.</p>
+        <p class="text-design">Le bateau est composé de 4 cabines doubles, 2 salles de bains, 2 WC, un grand carré convivial, une cuisine équipée et pratique, une table à carte, un cockpit spacieux et marin.</p>
         <p class="text-design">Croisière limitée à 4 équipiers, vous disposerez à bord d'une cabine privative et de tout le confort du Feeling 446.</p>
         <p class="text-design">En mer, vous êtes un équipier à part entière et vous participez à l'ensemble des manœuvres. A nos côtés, vous apprenez à tenir un quart, à régler les voiles, à suivre une navigation et à utiliser l'ensemble des appareils de bord, à étudier la météo et les fichiers GRIB, vous devenez un équipier confirmé!</p>
       </div>
@@ -29,7 +78,6 @@
 </div>
 
 
-<p class="text-center padded"><%= link_to "Demandez un devis sur-mesure", nil ,{:style => 'color: #30BCED; font-size: 16px; border: 1px solid #30BCED;     text-decoration: none; padding: 18px; font-size: 29px;'}%><p>
 
 
 <div class="wrapper padded">
@@ -39,7 +87,8 @@
        <%= image_tag 'card3.jpg', width: "100%"%>
       </div>
       <div class="col-xs-12 col-md-6">
-        <p class="text-design">L'itinéraire: vous pouvez nous rejoindre, en fonction des places disponibles, à chacune de ces escales.</p>
+        <p class="text-design">Le départ se fera de Marseille début novembre pour une expérience de 45 jours et de 4200 milles.</p>
+        <p class="text-design">Vous pouvez nous rejoindre, en fonction des places disponibles, à chacune de ces escales.</p>
         <ul class="text-design">
           <li>Depuis Marseille jusqu'à Gibraltar (environ 10 jours)</li>
           <li>De Gibraltar aux Canaries (environ 7 jours)</li>
@@ -48,5 +97,55 @@
         </ul>
       </div>
     </div>
+  </div>
+</div>
+
+
+
+<p class="text-center padded cta-trans"><%= link_to "Demandez un devis sur-mesure", new_contact_form_path ,{:style => 'color: #30BCED; border: 1px solid #30BCED; text-decoration: none; padding: 18px;'}%><p>
+
+
+
+<div class="wrapper padded" style="background-color: white;">
+  <div class="container">
+    <h3 style="color: gray;">- Informations -</h3>
+   <hr>
+<div>
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#price-in" aria-controls="price-in" role="tab" data-toggle="tab">Ce prix comprend</a></li>
+    <li role="presentation"><a href="#price-out" aria-controls="price-out" role="tab" data-toggle="tab">Ce prix ne comprend pas</a></li>
+    <li role="presentation"><a href="#check-list" aria-controls="check-list" role="tab" data-toggle="tab">A prévoir</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="price-in">
+      <ul class="padded">
+        <li>2 marins professionnels</li>
+        <li>Le logement en cabine double durant toute la durée du séjour</li>
+        <li>Pension complète</li>
+        <li>Gasoil, gaz, frais de port</li>
+        <li>Assurance RC pro</li>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="price-out">
+      <ul class="padded">
+        <li>Le transport vers le lieu de RDV et billets retour.</li>
+        <li>Les consommations personnelles lors des escales</li>
+      </ul>
+      <i style="font-size: 12px;">**Une caisse de bord est constituée sur place afin de subvenir à toutes les dépenses de fonctionnement de la croisière. Elle comprend, les frais de port, les pleins d’eau, de fuel, d'essence et de gaz. Les taxes douanières et administratives (selon le lieu de navigation), l’entretien de la literie et le ménage.</i>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="check-list">
+      <ul class="padded">
+        <li>Certificat médical d' aptitude</li>
+        <li>Ordonnance si traitement médical</li>
+        <li>Assurance responsabilité civil</li>
+        <li>Draps et sacs de couchage</li>
+        <li>Vêtements de quarts ( salopette, veste, bottes)</li>
+      </ul>
+    </div>
+  </div>
+</div>
   </div>
 </div>
