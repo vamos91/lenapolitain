@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get '/about' => 'static#about'
   get '/info-secu' => 'static#info-secu'
   get '/alacarte' => 'static#alacarte'
+  get '/cgv' => 'static#cgv'
   resources :blogs
   resources :croisieres
   resources :contact_forms

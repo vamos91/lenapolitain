@@ -46,7 +46,7 @@
       </div>
       <div class="col-xs-12 col-md-5 col-2-show">
         <div class="reservation well" style="background-color: white; padding: 50px;">
-          A partir de <strong><%= @croisiere.tarif%>€</strong><p style="font-size: 18px; color: #30BCED "><i>- <%= @croisiere.duree%></i></p>
+          A partir de <strong><%= @croisiere.tarif%>€*</strong><p style="font-size: 18px; color: #30BCED "><i>- <%= @croisiere.duree%></i></p>
           <hr>
           <%= simple_form_for @contact_form do |f| %>
           <div>
@@ -69,6 +69,7 @@
            <div class="form-group text-center">
                <%= f.submit "Demande de réservation", class: 'btn-primary btn-lg' %>
                <p class="padded" style="font-size: 10px;">Vous ne serez débité que si vous confirmez</p>
+               <p style="font-size: 10px;">* hors période de vacances scolaire</p>
            </div>
        <% end %>
      </div>

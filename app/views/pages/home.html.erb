@@ -4,7 +4,7 @@
          <%= image_tag 'final_logo.png', width: "50%"%>
       </div>
            <h1 class="nom">SAILING CRUISE ADVENTURE</h1>
-          <h4 class="fonction" style="margin-top: -15px;">Vous êtes le capitaine.</h4>
+          <h4 class="fonction" style="margin-top: -15px;">Bienvenue sur votre bateau.</h4>
           <p class="nom2" style="font-weight: bold;"></p>
         <p class="presentation hidden-xs">Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique.</p>
  <div class="text-center hidden-md hidden-lg hidden-sm padded">
@@ -15,7 +15,7 @@
 
 
 
-<div class="padded hidden-xs" style="background-color: white;">
+<!-- <div class="padded hidden-xs" style="background-color: white;">
   <div class="row row-destination">
   <div class="col-xs-12 col-sm-4 col-md-2  ">
     <div class="card feature-card">
@@ -54,9 +54,48 @@
     </div>
   </div>
 </div>
+</div> -->
+
+<div class="padded hidden-xs" style="background-color: white;">
+  <div class="row row-destination text-center">
+  <div class="col-xs-12 col-sm-4 col-md-2  ">
+    <div class=" feature-card">
+       <%= image_tag 'feature1.png' %>
+       <p>EVASION</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-2 ">
+    <div class=" feature-card">
+       <%= image_tag 'feature2.png' %>
+       <p>AVENTURE</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-2 ">
+    <div class=" feature-card">
+       <%= image_tag 'feature3.png' %>
+       <p>DÉTENTE</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-2 ">
+    <div class=" feature-card">
+       <%= image_tag 'feature4.png' %>
+       <p>SPORT</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-2 ">
+    <div class=" feature-card">
+       <%= image_tag 'feature5.png' %>
+       <p>ÉQUIPAGE PRO</p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 col-md-2 ">
+    <div class=" feature-card">
+       <%= image_tag 'feature6.png' %>
+       <p>DÉCOUVERTE</p>
+    </div>
+  </div>
 </div>
-
-
+</div>
 
 
 
@@ -80,7 +119,7 @@
             <p class="" style="font-size: 20px;">Votre second, Priscillia Soriano</p>
           <p style="font-weight: lighter;">Skipper pro, Diplômée de Marine marchande. Nombreuses transatlantiques et navigations aux Antilles dans le cadre d'un projet solidaire et missions scientifiques Zone Bleue en Atlantique et Caraïbes (2015-2018).</p>
           <ul class="list-inline">
-          <li><a href=""><i class="fab fa-youtube"></i></i></a></li>
+          <li><a href=""><i class="fab fa-youtube"></i></a></li>
           <li><a href=""><i class="fab fa-facebook"></i></a></li>
           <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
         </ul>
@@ -108,25 +147,29 @@
     </div>
   </div>
 </div>
-
-
-<div class="banner-transatlantique banner-parallax hidden-xs">
- <div class="container">
- </div><p style="color: white;">A bord du Napolitain, découvrez les Baléares et les antilles autrement, au programme de vos vacances et selon vos envies, nous partirons ensemble à la découverte des criques sauvages pour des baignades paradisiaques, nous partagerons des apéros de tapas et des barbecues de poissons frais, péchés ensemble pendant la journée.</p>
-
-</div>
 </div>
 
+<div class="wrapper">
+  <h2 class="padded" style="text-align: center; color: gray;">Partez à l'aventure et découvrez nos croisières à bord du Napolitain</h2>
+  <div class="container">
+    <% @croisieres.each do |croisiere| %>
+   <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <%= cl_image_tag croisiere.photo%>
+      <div class="caption">
+        <h3><%= croisiere.titre %> - <%= croisiere.croisiere_destination %> - </h3>
+        <p class="duree"><i><%= croisiere.duree %></i></p>
+        <% reduce_string = truncate(croisiere.description, length: 200) %>
+        <p class="text"><%= reduce_string %></p>
+        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
+      </div>
+    </div>
+  </div>
+  <% end %>
+  </div>
+</div>
 
-
-
-
-
-
-
-
-
-<div class="destination hidden-xs" style="margin-bottom: 50px; padding-top: 100px;">
+<div class="destination hidden-xs" style="margin-bottom: 50px; padding-top: 50px;">
   <h2 class="" style="text-align: center; color: gray;">Découvrez nos destinations à bord du Napolitain</h2>
   <p style="margin-bottom: 20px; text-align: center; color: gray; padding: 50px;">De la croisière privée, à la croisière Kite sur les plus beaux spots des Antilles ou en Transatlantique, votre Aventure est à portée d'étrave du "Napolitain".</p>
   <div class="row row-destination">
@@ -150,7 +193,9 @@
 <div class="row row-destination">
   <div class="col-xs-12 col-md-6 test">
     <div class="card">
+      <%= link_to "/alacarte" do%>
        <%= image_tag 'saint-martin.jpg' %>
+       <%end%>
        <p><%= link_to "Croisière privée à la carte", "/alacarte", {:style => 'color: white; text-decoration: none;'}%></p>
     </div>
   </div>
@@ -167,6 +212,13 @@
 <div class="text-center hidden-xs">
   <%= link_to "Réserver", new_contact_form_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
 </div>
+
+
+<!-- <div class="banner-transatlantique banner-parallax hidden-xs">
+ <div class="container">
+ </div><p style="color: white;">A bord du Napolitain, découvrez les Baléares et les antilles autrement, au programme de vos vacances et selon vos envies, nous partirons ensemble à la découverte des criques sauvages pour des baignades paradisiaques, nous partagerons des apéros de tapas et des barbecues de poissons frais, péchés ensemble pendant la journée.</p>
+
+</div> -->
 
 
 
@@ -201,25 +253,7 @@
 
 
 
-<div class="wrapper">
-  <h2 class="padded" style="text-align: center; color: gray;">Partez à l'aventure et découvrez nos croisières à bord du Napolitain</h2>
-  <div class="container">
-    <% @croisieres.each do |croisiere| %>
-   <div class="col-sm-6 col-md-4">
-    <div class="thumbnail">
-      <%= cl_image_tag croisiere.photo%>
-      <div class="caption">
-        <h3><%= croisiere.titre %> - <%= croisiere.croisiere_destination %> - </h3>
-        <p class="duree"><i><%= croisiere.duree %></i></p>
-        <% reduce_string = truncate(croisiere.description, length: 200) %>
-        <p class="text"><%= reduce_string %></p>
-        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
-      </div>
-    </div>
-  </div>
-  <% end %>
-  </div>
-</div>
+
 
 
 <div class="text-center padded">
