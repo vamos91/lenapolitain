@@ -2,7 +2,7 @@
       <div class="banner-content" style="width: 100%">
      <div class="banner-home">
            <h1 class="nom text-left">Croisière à la carte</h1>
-          <h3 class="text-left">Bienvenue à bord du Feeling 446</h3>
+          <h3 class="text-left">A Partir de 380 euros par jours pour la location du bateau!*</h3>
           <p class="nom2" style="font-weight: bold;"></p>
      </div>
    <%= simple_form_for @contact_form do |f| %>
@@ -56,7 +56,9 @@
         <div class="form-group">
                <%= f.text_area :content, class: 'form-control', rows: 10, placeholder: "Envie de visiter une île lointaine, besoin d'un bateau pour une mission scientifique ou un évènement particulier.
 
-Envie d'évasion mais le temps vous manque ?" %>
+Envie d'évasion mais le temps vous manque ?
+Embarquement à 9h débarquement à 17h
+" %>
            </div>
            <div class="form-group">
                <%= f.submit "C'EST PARTI !", class: 'btn-primary btn-lg' %>
@@ -77,5 +79,41 @@ Envie d'évasion mais le temps vous manque ?" %>
 
 
 
+<div class="wrapper padded" style="background-color: white;">
+  <div class="container">
+    <h3 style="color: gray;">- Informations tarif -</h3>
+   <hr>
+<div>
+
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#price-in" aria-controls="price-in" role="tab" data-toggle="tab">Ce prix comprend</a></li>
+    <li role="presentation"><a href="#price-out" aria-controls="price-out" role="tab" data-toggle="tab">Ce prix ne comprend pas</a></li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="price-in">
+      <ul class="padded">
+        <li>La croisière le logement en cabine double</li>
+        <li>Service du skipper et hôtesse</li>
+        <li>Les assurances RC armateur</li>
+        <li>Le repas du midi</li>
+        <li>Les boissons</li>
+        <li>Les frais de gasoil et d'eau</li>
+      </ul>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="price-out">
+      <ul class="padded">
+        <li>Les frais de transport jusqu'au port</li>
+        <li>Les dépenses personnelles à terre</li>
+        <li>Visite et restaurant</li>
+      </ul>
+      <i style="font-size: 12px;">**Une caisse de bord est constituée sur place afin de subvenir à toutes les dépenses de fonctionnement de la croisière. Elle comprend, les frais de port, les pleins d’eau, de fuel, d'essence et de gaz. Les taxes douanières et administratives (selon le lieu de navigation), l’entretien de la literie et le ménage.</i>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
 
 

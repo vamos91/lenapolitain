@@ -116,7 +116,7 @@
           <%= image_tag 'avatar-presc.jpg', class: 'avatar'%>
           <div class="padded">
             <%= image_tag 'boue.png', class: 'icone-avatar'%>
-            <p class="" style="font-size: 20px;">Votre second, Priscillia Soriano</p>
+            <p class="" style="font-size: 20px;">Votre second et hôtesse, Priscillia Soriano</p>
           <p style="font-weight: lighter;">Skipper pro, Diplômée de Marine marchande. Nombreuses transatlantiques et navigations aux Antilles dans le cadre d'un projet solidaire et missions scientifiques Zone Bleue en Atlantique et Caraïbes (2015-2018).</p>
           <ul class="list-inline">
           <li><a href=""><i class="fab fa-youtube"></i></a></li>
@@ -198,8 +198,10 @@
   </div>
   <div class="col-xs-12 col-md-6 test">
     <div class="card">
+      <%= link_to "/transatlantique" do%>
        <%= image_tag 'bateau6.jpg' %>
-       <p>Transatlantique</p>
+       <%end%>
+       <p><%= link_to "La transatlantique", "/transatlantique", {:style => 'color: white; text-decoration: none;'}%></p>
     </div>
   </div>
 </div>

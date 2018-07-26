@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>SAILING CRUISE ADVENTURE</title>
-    <meta name="description" content="Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique." />
-    <meta property="og:title" content="SAILING CRUISE ADVENTURE">
-    <meta property="og:image" content='<%= image_tag "bateau3.jpg"%>'>
-    <meta property="og:description" content="Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique."r">
-    <meta property="og:url" content="www.sailing-cruise-adventure.com">
+    <meta name="description" content="<%= meta_description%>" />
+    <meta property="og:title" content="meta_title">
+    <meta property="og:image" content='<%= meta_image%>'>
+    <meta property="og:description" content="<%= meta_description%>">
     <%= csrf_meta_tags %>
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag 'application', media: 'all' %>
