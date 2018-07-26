@@ -14350,3 +14350,16 @@ Processing by PagesController#home as HTML
 Completed 200 OK in 489ms (Views: 459.5ms | ActiveRecord: 4.1ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-07-26 12:05:48 +0200
+Processing by PagesController#home as HTML
+  [1m[36mCroisiere Load (0.7ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE Croisiere Load (0.0ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/pages_controller.rb:4
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (243.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 387ms (Views: 380.1ms | ActiveRecord: 0.7ms)
+
+
