@@ -1,8 +1,10 @@
 <div class="banner alacarte">
       <div class="banner-content" style="width: 100%">
      <div class="banner-home">
-           <h1 class="nom text-left">Croisière à la carte</h1>
-          <h3 class="text-left">A Partir de 380 euros par jours pour la location du bateau!*</h3>
+           <h1 class="nom text-left">Croisière à la carte <span style="font-size: 20px;">A Partir de 528 euros par jour pour la location du bateau!*</span></h1>
+          <h3 class="text-left" style="font-size: 15px;"><p>Envie de visiter une île lointaine, besoin d'un bateau pour une mission scientifique ou un évènement particulier.</p>
+          Envie d'évasion mais le temps vous manque ?
+          Embarquement à 9h débarquement à 17h</h3>
           <p class="nom2" style="font-weight: bold;"></p>
      </div>
    <%= simple_form_for @contact_form do |f| %>
@@ -54,11 +56,7 @@
       </div>
       <div class="col-xs-12 col-md-4 text-right">
         <div class="form-group">
-               <%= f.text_area :content, class: 'form-control', rows: 10, placeholder: "Envie de visiter une île lointaine, besoin d'un bateau pour une mission scientifique ou un évènement particulier.
-
-Envie d'évasion mais le temps vous manque ?
-Embarquement à 9h débarquement à 17h
-" %>
+               <%= f.text_area :content, class: 'form-control', rows: 10, placeholder: "De quoi avez-vous envie ?" %>
            </div>
            <div class="form-group">
                <%= f.submit "C'EST PARTI !", class: 'btn-primary btn-lg' %>
@@ -98,9 +96,6 @@ Embarquement à 9h débarquement à 17h
         <li>La croisière le logement en cabine double</li>
         <li>Service du skipper et hôtesse</li>
         <li>Les assurances RC armateur</li>
-        <li>Le repas du midi</li>
-        <li>Les boissons</li>
-        <li>Les frais de gasoil et d'eau</li>
       </ul>
     </div>
     <div role="tabpanel" class="tab-pane" id="price-out">
@@ -108,6 +103,7 @@ Embarquement à 9h débarquement à 17h
         <li>Les frais de transport jusqu'au port</li>
         <li>Les dépenses personnelles à terre</li>
         <li>Visite et restaurant</li>
+        <li>Caisse de bord</li>
       </ul>
       <i style="font-size: 12px;">**Une caisse de bord est constituée sur place afin de subvenir à toutes les dépenses de fonctionnement de la croisière. Elle comprend, les frais de port, les pleins d’eau, de fuel, d'essence et de gaz. Les taxes douanières et administratives (selon le lieu de navigation), l’entretien de la literie et le ménage.</i>
     </div>
