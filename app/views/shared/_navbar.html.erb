@@ -14,8 +14,7 @@
           <%= link_to "Croisières privées",croisieres_path, class: "dropdown-toggle" %>
           <ul class="dropdown-menu">
             <% @croisieres_napolitain.each do |croisiere|%>
-
-              <li><%= link_to croisiere.titre, croisiere_path(croisiere) %></li>
+              <li><span><%= link_to croisiere.titre, croisiere_path(croisiere) %> - <%= croisiere.croisiere_destination%></span></li>
             <% end %>
             <li class="divider"></li>
             <li class="text-center"><strong><%= link_to "Croisière à la carte", "/alacarte"%></strong></li>
