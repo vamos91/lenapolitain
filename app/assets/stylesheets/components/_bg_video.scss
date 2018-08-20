@@ -1,6 +1,6 @@
 /* Style the video: 100% width and height to cover the entire window */
 .video{
-  height: 100vh;
+  //height: 100vh;
   position: relative;
   background-size: cover !important;
   background-position: center;
@@ -10,7 +10,7 @@
 #myVideo {
     position: absolute;
     right: 0;
-    bottom: 0;
+    //bottom: 0;
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
@@ -43,5 +43,5 @@
 }
 
 .video iframe{
-  height: 100vh;
+  height: 101vh;
 }

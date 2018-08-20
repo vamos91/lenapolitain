@@ -1,4 +1,4 @@
-<div class="banner" style="">
+<!-- div class="banner" style="">
      <div class="banner-home">
       <div class="hidden-lg hidden-md hidden-sm">
          <%= image_tag 'final_logo.png', width: "50%"%>
@@ -11,8 +11,24 @@
   <%= link_to "Nos croisieres", croisieres_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
 </div>
     </div>
-</div>
+</div> -->
 
+<div class="video center banner" style="margin-bottom: 0px;">
+  <div class="banner-home">
+      <div class="hidden-lg hidden-md hidden-sm">
+         <%= image_tag 'final_logo.png', width: "50%"%>
+      </div>
+           <h1 class="nom">SAILING CRUISE ADVENTURE</h1>
+          <h4 class="fonction" style="margin-top: -15px;">Bienvenue sur votre bateau.</h4>
+          <p class="nom2" style="font-weight: bold;"></p>
+        <p class="presentation hidden-xs">Aux Antilles comme aux Baléares, à bord, chaque jour est différent, chaque croisière est unique.</p>
+ <div class="text-center hidden-md hidden-lg hidden-sm padded">
+  <%= link_to "Nos croisieres", croisieres_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
+</div>
+    </div>
+  <% @embed_code = "<iframe width='100%' src='https://www.youtube.com/embed/zLtW0JMdFgk?mute=1&autoplay=1&loop=1'?rel=0&amp;controls=0;showinfo=0 frameborder='0' allowfullscreen></iframe>" %>
+<div id="myVideo" style="z-index: -10;"><%= raw(@embed_code) %></div>
+</div>
 
 
 <!-- <div class="padded hidden-xs" style="background-color: white;">
