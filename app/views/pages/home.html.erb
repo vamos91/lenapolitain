@@ -167,9 +167,6 @@ Skipper de croisières « voile active » en Méditerranée (France,Grèce,Itali
   <h2 class="padded" style="text-align: center; color: gray;">Partez à l'aventure et découvrez nos croisières à bord du Napolitain</h2>
   <div class="container">
     <% @croisieres.each do |croisiere| %>
-     <% sum_reviews = 0 %>
-     <% croisiere.reviews.each {|num| sum_reviews += num.rating.to_i} %>
-     <% average_rating = sum_reviews/croisiere.reviews.count %>
    <div class="col-sm-6 col-md-4">
     <div class="thumbnail">
       <%= cl_image_tag croisiere.photo%>
@@ -178,8 +175,13 @@ Skipper de croisières « voile active » en Méditerranée (France,Grèce,Itali
         <p class="duree"><i><%= croisiere.duree %></i></p>
         <% reduce_string = truncate(croisiere.description, length: 200) %>
         <p class="text"><%= reduce_string %></p>
-        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %> <span class="pull-right" style="font-size: 14px; color: gray;"><%= croisiere.reviews.count%> avis : <%= render 'reviews/rating', stars: average_rating %></span> </p>
-
+        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %>
+        <% if croisiere.reviews.count != 0 %>
+         <% sum_reviews = 0 %>
+         <% croisiere.reviews.each {|num| sum_reviews += num.rating.to_i} %>
+         <% average_rating = sum_reviews/croisiere.reviews.count %>
+          <span class="pull-right" style="font-size: 14px; color: gray;"><%= croisiere.reviews.count%> avis : <%= render 'reviews/rating', stars: average_rating %></span> </p>
+        <% end %>
 
       </div>
     </div>
