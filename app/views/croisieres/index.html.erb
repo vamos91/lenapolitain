@@ -10,15 +10,17 @@
         <p class="duree"><i><%= croisiere.duree %></i></p>
         <% reduce_string = truncate(croisiere.description, length: 200) %>
         <p class="text"><%= reduce_string %></p>
-        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %></p>
+        <p><%= link_to "J'y vais", croisiere_path(croisiere), class: 'btn btn-primary' %>
+        <% if croisiere.reviews.count != 0 %>
+         <% sum_reviews = 0 %>
+         <% croisiere.reviews.each {|num| sum_reviews += num.rating.to_i} %>
+         <% average_rating = sum_reviews/croisiere.reviews.count %>
+          <span class="pull-right" style="font-size: 14px; color: gray;"><%= croisiere.reviews.count%> avis : <%= render 'reviews/rating', stars: average_rating %></span> </p>
+        <% end %>
+
       </div>
     </div>
   </div>
   <% end %>
   </div>
 </div>
-
-
-
-
-
