@@ -23,6 +23,10 @@ class CroisieresController < ApplicationController
     @reviews = Review.where(croisiere_id: @croisiere.id).reverse
     @review = Review.new
     @croisieres_par_destination = Croisiere.where(croisiere_destination: @croisiere.croisiere_destination)
+    sum_reviews = 0
+    @reviews.each {|num| sum_reviews += num.rating.to_i}
+    @average_rating = sum_reviews/@reviews.count
+
   end
 
   def update

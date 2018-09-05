@@ -3,7 +3,7 @@
 </div>
 <div class="wrapper" style="background-color: white;">
   <div class="container">
-    <h3 class="" style="color: gray">- <%= @croisiere.titre %> - <%= @croisiere.croisiere_destination.upcase %> -</h3>
+    <h3 class="" style="color: gray">- <%= @croisiere.titre %> - <%= @croisiere.croisiere_destination.upcase %> - <span style="font-size: 20px;"><%= render 'reviews/rating', stars: @average_rating %></span></h3>
     <hr>
     <div class="row" style="margin-bottom: 100px;">
       <div class="col-xs-12 col-md-7">
@@ -24,7 +24,7 @@
 <% unless @reviews.count == 0 %>
 <div class="padded">
   <button class="btn btn-primary hidden-md hidden-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Voir les commentaires
+              Voir les avis
             </button>
 </div>
 <%end%>
@@ -32,14 +32,14 @@
             <div class="collapse" id="collapseExample">
               <div class="">
                  <% unless @reviews.count == 0 %>
-                  <%= @reviews.count %> Commentaires:
+                  <%= @reviews.count %> avis:
                   <% end %>
                 <%= render 'reviews/reviews' %>
               </div>
             </div>
            <div class="padded reviews hidden-xs">
              <% unless @reviews.count == 0 %>
-            <%= @reviews.count %> Commentaires:
+            <%= @reviews.count %> avis:
             <% end %>
           <%= render 'reviews/reviews' %>
            </div>
@@ -67,7 +67,9 @@
                <%= f.input :email, label: false, class: 'form-control', placeholder: 'Votre mail' %>
            </div>
            <div class="form-group text-center">
-               <%= f.submit "Demande de réservation", class: 'btn-primary btn-lg' %>
+               <p><%= f.submit "Demande de réservation", class: 'btn-primary btn-lg' %></p>
+               <p>Avis : <%= @average_rating%>/5</p>
+               <span style="font-size: 20px;"><%= render 'reviews/rating', stars: @average_rating %></span>
                <p class="padded" style="font-size: 10px;">Vous ne serez débité que si vous confirmez</p>
                <p style="font-size: 10px;">* hors période de vacances scolaire</p>
            </div>
