@@ -12,14 +12,14 @@
            <li class="dropdown">
 
           <%= link_to "Croisières privées",croisieres_path, class: "dropdown-toggle" %>
-          <ul class="dropdown-menu" style="min-width: 300px;">
+          <ul class="dropdown-menu" style="">
             <% @croisieres_napolitain.each do |croisiere|%>
               <li><span><%= link_to croisiere.titre, croisiere_path(croisiere) %> - <%= croisiere.croisiere_destination%></span></li>
             <% end %>
             <li class="divider"></li>
-            <li class="text-center"><strong><%= link_to "Croisière à la carte", "/alacarte"%></strong></li>
+            <li class=""><strong><%= link_to "Croisière à la carte", "/alacarte"%></strong></li>
             <li class="divider"></li>
-            <li class="text-center"><strong><%= link_to "Transatlantique", "/transatlantique"%></strong></li>
+            <li class=""><strong><%= link_to "Transatlantique", "/transatlantique"%></strong></li>
 
           </ul>
         </li>
