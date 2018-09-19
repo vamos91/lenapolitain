@@ -2,7 +2,12 @@
   background-color: #004E64;
   color: white;
   padding: 20%;
-  background-image: image-url('about.jpg');
+  background-size: cover;
+  background-image: image-url('info.jpg');
+}
+
+.intro-secu p{
+font-size: 25px;
 }
 
 .cgv{

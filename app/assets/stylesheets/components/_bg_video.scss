@@ -7,6 +7,12 @@
   overflow-y: hidden;
 }
 
+.video-blog{
+  background-size: cover !important;
+  background-position: center;
+  overflow-y: hidden;
+}
+
 #myVideo {
     position: absolute;
     right: 0;
@@ -15,6 +21,16 @@
     min-height: 100%;
     z-index: -1;
 }
+
+#myVideo-blog {
+    //position: absolute;
+    right: 0;
+    //bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
 
 /* Add some content at the bottom of the video/page */
 .content {
@@ -45,3 +61,9 @@
 .video iframe{
   height: 101vh;
 }
+
+.video-blog iframe{
+  height: 100vh;
+}
+
+
