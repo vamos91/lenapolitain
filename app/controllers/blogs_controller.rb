@@ -10,7 +10,8 @@ class BlogsController < ApplicationController
 
   def new
     @article = Blog.new
-    @articles = Blog.all
+    @articles = Blog.all.reverse
+    @photo = Photo.new
   end
 
   def create
@@ -18,6 +19,7 @@ class BlogsController < ApplicationController
     if @article.save
      redirect_to blogs_path
     end
+
   end
 
   def edit

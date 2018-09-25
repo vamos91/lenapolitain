@@ -2,7 +2,27 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-xs-12 well">
-         <p class="text-center">ENTRER UN NOUVEL ARTICLE</p>
+<!--          <p class="text-center">ENTRER UN NOUVEL ARTICLE</p>
+<%= simple_form_for(@photo) do |f| %>
+
+
+  <div class="form-group">
+   <%= f.input :photo1, label: :PHOTO %>
+   <%= f.input :photo1_cache, as: :hidden %>
+  </div>
+
+  <%= f.submit "ENVOYER" %>
+<% end %>
+
+
+
+
+<hr> -->
+
+
+
+
+
 <%= simple_form_for(@article) do |f| %>
 <div class="form-group">
   <%= f.input :titre, label: false, placeholder: 'Met nous un titre bien sympa !' %>
@@ -19,6 +39,19 @@
   </div>
   <%= f.submit "ENVOYER" %>
 <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
       </div>
        <div class="col-sm-6 col-xs-12 expendable">
           <% @articles.each do |article| %>

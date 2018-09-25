@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :contact_forms
   get 'croisieres/show' => 'croisieres#new'
   resources :reviews
+  resources :photos
 end
