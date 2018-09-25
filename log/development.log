@@ -24811,3 +24811,517 @@ Processing by BlogsController#show as HTML
 Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-09-25 12:35:36 +0200
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/rubies/ruby-2.5.0/lib/ruby/gems/2.5.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by PagesController#home as HTML
+  [1m[36mCroisiere Load (36.2ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCroisiere Load (1.6ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/pages_controller.rb:4
+  Rendering pages/home.html.erb within layouts/application
+  [1m[35m (5.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:179
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:181
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:182
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:183
+  Rendered reviews/_rating.html.erb (0.5ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 32]]
+  ↳ app/views/pages/home.html.erb:179
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 32]]
+  ↳ app/views/pages/home.html.erb:181
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 32]]
+  ↳ app/views/pages/home.html.erb:182
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 32]]
+  ↳ app/views/pages/home.html.erb:183
+  Rendered reviews/_rating.html.erb (0.0ms)
+  Rendered pages/home.html.erb within layouts/application (488.1ms)
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 633ms (Views: 537.0ms | ActiveRecord: 62.3ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-09-25 12:42:46 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mCroisiere Load (0.9ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (3.9ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (3.5ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 79ms (Views: 45.5ms | ActiveRecord: 12.4ms)
+
+
+Started GET "/blogs/15" for 127.0.0.1 at 2018-09-25 12:42:53 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.8ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 49ms (Views: 43.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/15" for 127.0.0.1 at 2018-09-25 12:45:24 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 39ms (Views: 34.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-09-25 12:45:31 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 38ms (Views: 34.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:45:34 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 30.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:47:16 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 40ms (Views: 34.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:47:37 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 39ms (Views: 35.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:47:49 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.7ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 40ms (Views: 34.5ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:47:57 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.5ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 35ms (Views: 30.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:48:46 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 3358ms (Views: 3353.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:49:21 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 34ms (Views: 29.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:49:44 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.8ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 2458ms (Views: 2453.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:50:09 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 41ms (Views: 34.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:50:45 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.8ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 2485ms (Views: 2480.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:51:17 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.8ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 2465ms (Views: 2459.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:52:18 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 43ms (Views: 36.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:56:36 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 45ms (Views: 41.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:56:52 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 63ms (Views: 57.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:58:04 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 2425ms (Views: 2419.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:58:22 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 2490ms (Views: 2483.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:58:30 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.6ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 2424ms (Views: 2419.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:59:04 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 872ms (ActiveRecord: 0.7ms)
+
+
+  
+ActionView::Template::Error (Incompatible units: 'px' and 'vh'.):
+    11:     <%= favicon_link_tag 'final_logo.png' %>
+    12:     <%= csrf_meta_tags %>
+    13:     <%= action_cable_meta_tag %>
+    14:     <%= stylesheet_link_tag 'application', media: 'all' %>
+    15:     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+    16:   </head>
+    17:   <body>
+  
+app/assets/stylesheets/components/_bg_video.scss:70
+app/assets/stylesheets/components/_index.scss:11
+app/assets/stylesheets/application.scss:14
+app/views/layouts/application.html.erb:14:in `_app_views_layouts_application_html_erb___3374473808188973823_70319298711120'
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 12:59:42 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (0.9ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 2392ms (Views: 2387.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 13:00:32 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 2519ms (Views: 2514.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 13:00:48 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.0ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (1.0ms)
+Completed 200 OK in 2449ms (Views: 2444.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/blogs/10" for 127.0.0.1 at 2018-09-25 13:01:35 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (1.3ms)
+Completed 200 OK in 2405ms (Views: 2400.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-09-25 13:02:23 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.4ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (2.6ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 38ms (Views: 33.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/15" for 127.0.0.1 at 2018-09-25 13:02:29 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCroisiere Load (0.9ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.2ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (1.8ms)
+Completed 200 OK in 41ms (Views: 34.6ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-09-25 13:03:20 +0200
+Processing by BlogsController#new as HTML
+  [1m[36mCroisiere Load (1.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:24
+  Rendered blogs/new.html.erb within layouts/application (80.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 117ms (Views: 112.0ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-09-25 13:04:20 +0200
+Processing by BlogsController#new as HTML
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:24
+  Rendered blogs/new.html.erb within layouts/application (9.5ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 42ms (Views: 38.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/blogs/new" for 127.0.0.1 at 2018-09-25 13:04:34 +0200
+Processing by BlogsController#new as HTML
+  [1m[36mCroisiere Load (0.4ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering blogs/new.html.erb within layouts/application
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/views/blogs/new.html.erb:24
+  Rendered blogs/new.html.erb within layouts/application (15.9ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 52ms (Views: 47.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/blogs/15/edit" for 127.0.0.1 at 2018-09-25 13:04:37 +0200
+Processing by BlogsController#edit as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.6ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/edit.html.erb within layouts/application
+  Rendered blogs/edit.html.erb within layouts/application (8.0ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.9ms)
+Completed 200 OK in 46ms (Views: 39.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/blogs" for 127.0.0.1 at 2018-09-25 13:25:59 +0200
+Processing by BlogsController#index as HTML
+  [1m[36mCroisiere Load (0.9ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (2.1ms)[0m  [1m[34mSELECT "blogs".* FROM "blogs"[0m
+  ↳ app/controllers/blogs_controller.rb:4
+  Rendering blogs/index.html.erb within layouts/application
+  Rendered blogs/index.html.erb within layouts/application (2.2ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 37ms (Views: 30.3ms | ActiveRecord: 3.1ms)
+
+
+Started GET "/blogs/15" for 127.0.0.1 at 2018-09-25 13:26:01 +0200
+Processing by BlogsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mBlog Load (0.3ms)[0m  [1m[34mSELECT  "blogs".* FROM "blogs" WHERE "blogs"."id" = $1 LIMIT $2[0m  [["id", 15], ["LIMIT", 1]]
+  ↳ app/controllers/blogs_controller.rb:42
+  Rendering blogs/show.html.erb within layouts/application
+  Rendered blogs/show.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.8ms)
+Completed 200 OK in 36ms (Views: 30.9ms | ActiveRecord: 0.8ms)
+
+

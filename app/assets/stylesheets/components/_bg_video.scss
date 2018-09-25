@@ -23,12 +23,12 @@
 }
 
 #myVideo-blog {
-    //position: absolute;
-    right: 0;
-    //bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1;
+    // //position: absolute;
+    // right: 0;
+    // //bottom: 0;
+    // min-width: 100%;
+    // min-height: 100%;
+    // z-index: -1;
 }
 
 
@@ -63,7 +63,10 @@
 }
 
 .video-blog iframe{
-  height: 100vh;
+  //height: 100vh;
 }
 
+.video-blog iframe{
+  height: calc(100vh - 440px);
+}
 
