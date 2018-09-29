@@ -13,8 +13,8 @@
     </div>
 </div>
 
-<div class="video center banner hidden-xs hidden-sm" style="margin-bottom: 0px;">
-  <div class="banner-home">
+<div class="video center banner banner-home hidden-xs hidden-sm" style="margin-bottom: 0px;">
+  <div class="">
       <div class="hidden-lg hidden-md hidden-sm">
          <%= image_tag 'final_logo.png', width: "50%"%>
       </div>
@@ -25,10 +25,20 @@
  <div class="text-center hidden-md hidden-lg hidden-sm padded">
   <%= link_to "Nos croisieres", croisieres_path ,{:style => 'color: white; background-color: #00A5CF; text-decoration: none; padding: 18px; font-size: 29px;'}%>
 </div>
+<hr>
+<div class="commentaire" style="padding-right: 600px; text-align: justify;">
+  Dernier commentaire pour Sailing cruise adventure
+  <p style="font-size: 15px;"> <%= render 'reviews/rating', stars: @last_review.rating %></p>
+    <p style="font-size: 15px;"><i>"<%= @last_review.description%>"</i><span> - <%= @last_review.nom%> - </span></p>
+</div>
+
+
     </div>
+
   <% @embed_code = "<iframe width='100%' src='https://www.youtube.com/embed/nZM19eioi5w?mute=1&autoplay=1&loop=1&playlist=zLtW0JMdFgk'?rel=0&amp;controls=0;showinfo=0;loop=1 frameborder='0' allowfullscreen></iframe>" %>
 <div id="myVideo" style="z-index: -10;"><%= raw(@embed_code) %></div>
 </div>
+
 
 
 <!-- <div class="padded hidden-xs" style="background-color: white;">
