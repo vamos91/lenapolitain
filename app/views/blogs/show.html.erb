@@ -70,7 +70,7 @@
     </div>
   </div>
 </div> -->
-
+<!--
 <% unless @article.image.blank?%>
 <div class="wrapper" style="margin-bottom: 300px;">
   <div class="container">
@@ -79,6 +79,40 @@
        <% unless @article.image.blank?%>
           <div class="banner-show">
           <%= cl_image_tag @article.image, width: "100%" %>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6">
+       <div class="titre text-center padded">
+      <h3><%= @article.titre %></h3>
+      <p><i>Le <%= @article.created_at %></i></p>
+    </div>
+    <div class="text-design">
+      <p><%= @article.description %></p>
+    </div>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+
+ -->
+
+
+
+<% unless @article.image.blank?%>
+<div class="wrapper" style="margin-bottom: 300px;">
+  <div class="container">
+    <%= cl_image_tag @article.image, width: "100%" %>
+    <hr>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6">
+       <% unless @article.image.blank?%>
+          <div class="">
+          <%= cl_image_tag @article.photos, width: "100%" %>
+
+          <%= cl_image_tag @article.illustration, width: "100%" %>
           </div>
         <% end %>
       </div>

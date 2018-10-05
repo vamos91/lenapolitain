@@ -2,22 +2,12 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-6 col-xs-12 well">
-<!--          <p class="text-center">ENTRER UN NOUVEL ARTICLE</p>
-<%= simple_form_for(@photo) do |f| %>
-
-
-  <div class="form-group">
-   <%= f.input :photo1, label: :PHOTO %>
-   <%= f.input :photo1_cache, as: :hidden %>
-  </div>
-
-  <%= f.submit "ENVOYER" %>
-<% end %>
+          <p class="text-center">ENTRER UN NOUVEL ARTICLE</p>
 
 
 
 
-<hr> -->
+<hr>
 
 
 
@@ -31,13 +21,21 @@
       <%= f.text_area :description, label: :DESCRIPTION,rows: 10, placeholder: "C'est quoi cette article ?? aller...lache toi sans faire de copier/coller ! :)", class: 'form-control'%>
   </div>
   <div class="form-group">
-   <%= f.input :image, label: :PHOTO %>
+   <%= f.input :image, label: :PHOTO_PRINCIPAL %>
     <%= f.input :image_cache, as: :hidden %>
+  </div>
+  <div class="form-group">
+   <%= f.input :photos, label: :ILLUSTRATION1 %>
+    <%= f.input :photos_cache, as: :hidden %>
+  </div>
+  <div class="form-group">
+   <%= f.input :illustration, label: :ILLUSTRATION2 %>
+    <%= f.input :illustration_cache, as: :hidden %>
   </div>
   <div class="form-group">
    <%= f.input :video, label: false, placeholder: "Ex: https://www.youtube.com/watch?v=X8Y9IJonTqY"%>
   </div>
-  <%= f.submit "ENVOYER" %>
+  <%= f.submit "ENVOYER"%>
 <% end %>
 
 

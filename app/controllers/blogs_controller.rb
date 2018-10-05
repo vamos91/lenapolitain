@@ -11,10 +11,10 @@ class BlogsController < ApplicationController
   def new
     @article = Blog.new
     @articles = Blog.all.reverse
-    @photo = Photo.new
   end
 
   def create
+    #@photo = Photo.new(params_photo)
     @article = Blog.new(params_blog)
     if @article.save
      redirect_to blogs_path
@@ -45,7 +45,7 @@ class BlogsController < ApplicationController
   end
 
   def params_blog
-    params.require(:blog).permit(:titre, :description, :image, :image_cache, :video)
+    params.require(:blog).permit(:titre, :description, :image, :image_cache, :video, :photos, :photos_cache, :illustration, :illustration_cache )
   end
 
 
