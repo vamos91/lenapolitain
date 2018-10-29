@@ -40378,3 +40378,99 @@ Processing by StaticController#bateau as HTML
 Completed 200 OK in 49ms (Views: 48.2ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-10-29 18:17:59 +0100
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/nicolas/.rvm/rubies/ruby-2.5.0/lib/ruby/gems/2.5.0/gems/sprockets-rails-3.2.1/lib/sprockets/rails/quiet_assets.rb:13
+Processing by PagesController#home as HTML
+  [1m[36mCroisiere Load (5.7ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCroisiere Load (0.2ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/pages_controller.rb:4
+  [1m[36mReview Load (0.9ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" ORDER BY "reviews"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+Started GET "/" for 127.0.0.1 at 2018-10-29 18:18:03 +0100
+Processing by PagesController#home as HTML
+  [1m[36mCroisiere Load (0.8ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE Croisiere Load (0.0ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/pages_controller.rb:4
+  [1m[36mReview Load (0.5ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" ORDER BY "reviews"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered reviews/_rating.html.erb (0.3ms)
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[36mReview Load (2.0ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:191
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:192
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:193
+  Rendered reviews/_rating.html.erb (0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 35]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 37]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 38]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 36]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 34]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 33]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 32]]
+  ↳ app/views/pages/home.html.erb:189
+  Rendered pages/home.html.erb within layouts/application (3942.2ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 4152ms (Views: 4085.1ms | ActiveRecord: 27.7ms)
+
+
+  Rendered reviews/_rating.html.erb (0.6ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:191
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:192
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:193
+  Rendered reviews/_rating.html.erb (0.0ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 35]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 37]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 38]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 36]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 34]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 33]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 32]]
+  ↳ app/views/pages/home.html.erb:189
+  Rendered pages/home.html.erb within layouts/application (2566.2ms)
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (2.6ms)
+Completed 200 OK in 2623ms (Views: 2612.9ms | ActiveRecord: 4.6ms)
+
+
+Started GET "/bateau" for 127.0.0.1 at 2018-10-29 18:19:05 +0100
+Processing by StaticController#bateau as HTML
+  [1m[36mCroisiere Load (1.2ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering static/bateau.html.erb within layouts/application
+  Rendered shared/_slide_bateau.html.erb (7.2ms)
+  Rendered static/bateau.html.erb within layouts/application (18.6ms)
+  Rendered shared/_navbar.html.erb (2.5ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 1.2ms)
+
+
