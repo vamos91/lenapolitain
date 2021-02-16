@@ -10,12 +10,17 @@ class ReviewsController < ApplicationController
 
   def create
      @review = Review.new(params_review)
+    # binding.pry
      @review.croisiere_id = params[:review][:croisiere_id]
      @test = @review.rating
      @star_rating = @test[0]
      @review.rating = @star_rating
+     @review.valid?
+     @review.errors.full_messages
     if @review.save
       redirect_to root_path
+    else
+      redirect_to transatlantique_path
     end
   end
 

@@ -10,9 +10,9 @@ Rails.application.routes.draw do
   get '/alacarte' => 'static#alacarte'
   get '/cgv' => 'static#cgv'
   resources :blogs
-
   resources :croisieres
   resources :contact_forms
   get 'croisieres/show' => 'croisieres#new'
   resources :reviews
+  match 'transatlantique' => 'static#transatlantique', :via => :post
 end

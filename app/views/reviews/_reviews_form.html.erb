@@ -15,8 +15,11 @@
               </h4>
                        </div>
                       </div>
+              <% unless current_page?(transatlantique_path) %>
+                <%= f.hidden_field :croisiere_id, :value => @croisiere.id %>
+              <% else %>
 
-              <%= f.hidden_field :croisiere_id, :value => @croisiere.id %>
+              <% end %>
               <div class="f" style="padding: 20px; padding-top: 0; height: auto;">
               <%= f.input :description, label: false, placeholder: "Votre commentaire ",:input_html => {:rows => 5} %>
               <%= f.button :submit, value: "Ajouter ce commentaire", class: "btn btn-primary pull-right" %>
