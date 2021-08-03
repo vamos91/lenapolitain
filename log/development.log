@@ -48611,3 +48611,173 @@ Processing by CroisieresController#show as HTML
 Completed 200 OK in 105ms (Views: 98.7ms | ActiveRecord: 1.5ms)
 
 
+Started GET "/reviews" for 127.0.0.1 at 2021-08-02 13:55:29 +0200
+Processing by ReviewsController#index as HTML
+  [1m[36mCroisiere Load (2.8ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering reviews/index.html.erb within layouts/application
+  Rendered reviews/index.html.erb within layouts/application (1.0ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 11.6ms)
+
+
+  
+SyntaxError (/Users/nicolas/code/vamos91/lenapolitain/app/views/reviews/index.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/reviews/index.html.erb:15: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/reviews" for 127.0.0.1 at 2021-08-02 13:56:08 +0200
+Processing by ReviewsController#index as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering reviews/index.html.erb within layouts/application
+  Rendered reviews/index.html.erb within layouts/application (0.3ms)
+  Rendered shared/_navbar.html.erb (2.9ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 54ms (Views: 49.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-08-02 13:57:32 +0200
+Processing by ReviewsController#index as HTML
+  [1m[36mCroisiere Load (0.8ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (1.1ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:4
+  Rendered reviews/index.html.erb within layouts/application (12.7ms)
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (1.2ms)
+Completed 200 OK in 55ms (Views: 43.1ms | ActiveRecord: 6.5ms)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-08-02 13:59:15 +0200
+Processing by ReviewsController#index as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:5
+  Rendered reviews/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (1.4ms)
+Completed 200 OK in 52ms (Views: 48.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-08-02 14:02:09 +0200
+Processing by ReviewsController#index as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (1.9ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:5
+  Rendered reviews/index.html.erb within layouts/application (4.9ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (1.5ms)
+Completed 200 OK in 47ms (Views: 41.4ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-08-02 14:02:34 +0200
+Processing by ReviewsController#index as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:5
+  Rendered reviews/index.html.erb within layouts/application (2.1ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (1.1ms)
+Completed 200 OK in 41ms (Views: 35.6ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/reviews/25" for 127.0.0.1 at 2021-08-02 14:02:46 +0200
+Processing by ReviewsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"W0CEDh+wfOkjFtpsUrtgKXOpFbxZ5FCJnMTZKFMFAvMKtQJQXEgYiWl+KACTk4xCFnZ/P3oKU2aTk8CHkxMloA==", "id"=>"25"}
+  [1m[36mCroisiere Load (0.5ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" WHERE "reviews"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/reviews_controller.rb:46
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/reviews_controller.rb:39
+  [1m[36mReview Destroy (2.3ms)[0m  [1m[31mDELETE FROM "reviews" WHERE "reviews"."id" = $1[0m  [["id", 25]]
+  ↳ app/controllers/reviews_controller.rb:39
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/reviews_controller.rb:39
+Redirected to http://localhost:3000/
+Completed 302 Found in 17ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2021-08-02 14:02:46 +0200
+Processing by PagesController#home as HTML
+  [1m[36mCroisiere Load (0.3ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  [1m[36mCACHE Croisiere Load (0.0ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/pages_controller.rb:4
+  [1m[36mReview Load (0.4ms)[0m  [1m[34mSELECT  "reviews".* FROM "reviews" ORDER BY "reviews"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/pages_controller.rb:6
+  Rendering pages/home.html.erb within layouts/application
+  Rendered reviews/_rating.html.erb (0.4ms)
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:191
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:192
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 39]]
+  ↳ app/views/pages/home.html.erb:193
+  Rendered reviews/_rating.html.erb (0.0ms)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 35]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 35]]
+  ↳ app/views/pages/home.html.erb:191
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 35]]
+  ↳ app/views/pages/home.html.erb:192
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 35]]
+  ↳ app/views/pages/home.html.erb:193
+  Rendered reviews/_rating.html.erb (0.0ms)
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 37]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 38]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 36]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[36mReview Load (0.3ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 36]]
+  ↳ app/views/pages/home.html.erb:191
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 36]]
+  ↳ app/views/pages/home.html.erb:192
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 36]]
+  ↳ app/views/pages/home.html.erb:193
+  Rendered reviews/_rating.html.erb (0.1ms)
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 34]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[36mReview Load (0.2ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:191
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:192
+  [1m[35mCACHE  (0.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 31]]
+  ↳ app/views/pages/home.html.erb:193
+  Rendered reviews/_rating.html.erb (0.0ms)
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 33]]
+  ↳ app/views/pages/home.html.erb:189
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "reviews" WHERE "reviews"."croisiere_id" = $1[0m  [["croisiere_id", 32]]
+  ↳ app/views/pages/home.html.erb:189
+  Rendered pages/home.html.erb within layouts/application (76.6ms)
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (2.7ms)
+Completed 200 OK in 130ms (Views: 120.3ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/reviews" for 127.0.0.1 at 2021-08-02 14:02:53 +0200
+Processing by ReviewsController#index as HTML
+  [1m[36mCroisiere Load (0.7ms)[0m  [1m[34mSELECT "croisieres".* FROM "croisieres"[0m
+  ↳ app/controllers/application_controller.rb:4
+  Rendering reviews/index.html.erb within layouts/application
+  [1m[36mReview Load (0.8ms)[0m  [1m[34mSELECT "reviews".* FROM "reviews"[0m
+  ↳ app/views/reviews/index.html.erb:5
+  Rendered reviews/index.html.erb within layouts/application (2.8ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (3.2ms)
+Completed 200 OK in 54ms (Views: 47.5ms | ActiveRecord: 1.5ms)
+
+

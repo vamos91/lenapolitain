@@ -19,19 +19,13 @@
           <%end%>
           <%= cl_image_tag @croisiere.carte, width: "100%" %>
 
-
-
-
-
-
-
-<% unless @reviews.count == 0 %>
-<div class="padded">
-  <button class="btn btn-primary hidden-md hidden-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-              Voir les avis
-            </button>
-</div>
-<%end%>
+            <% unless @reviews.count == 0 %>
+            <div class="padded">
+              <button class="btn btn-primary hidden-md hidden-lg" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                          Voir les avis
+                        </button>
+            </div>
+            <%end%>
 
             <div class="collapse" id="collapseExample">
               <div class="">

@@ -1,0 +1,13 @@
+<div class="wrapper">
+  <h2 class="padded" style="text-align: center; color: gray;">Voici tous les commentaires</h2>
+  <div class="container">
+  <ul>
+   <% @reviews.each do |review| %>
+    <li>
+        <%= review.description %>
+        <%= link_to "Supprimer", review_path(review), method: :delete, data: {confirm: "Tu es sur de vouloir supprimer ce commentaire ?"}, class: "supprimer"%>
+    <li>
+    <% end %>
+  </ul>
+  </div>
+</div>
