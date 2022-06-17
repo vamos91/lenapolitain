@@ -21,7 +21,7 @@ gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
 
 
-gem 'i18n', '~> 0.7.0'
+gem 'i18n', '~> 0.8.0'
 gem 'postmark-rails'
 
 group :development do
